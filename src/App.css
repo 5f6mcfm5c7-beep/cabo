@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, #2d4059, #101820 55%);
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  backdrop-filter: blur(14px);
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 8px 0 12px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.eyebrow {
+  color: #f7c873;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.subtitle,
+.card p {
+  color: #d8dee9;
+  line-height: 1.5;
+}
+
+button,
+input {
+  width: 100%;
+  margin-top: 14px;
+  padding: 15px 16px;
+  border-radius: 16px;
+  font-size: 17px;
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b8c0cc;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primaryButton {
+  background: #f7c873;
+  color: #101820;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+.backButton {
+  width: auto;
+  background: transparent;
+  color: #f7c873;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.playerList {
+  margin: 22px 0;
+  display: grid;
+  gap: 10px;
+}
+
+.player {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.cardRow {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.gameCard {
+  width: 90px;
+  height: 130px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #1e3a5f,
+    #274c77
+  );
+  border: 2px solid rgba(255,255,255,0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.pileRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.pile {
+  width: 140px;
+  min-height: 100px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.pile p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #d8dee9;
+}
+
+.pile strong {
+  font-size: 30px;
+}
+
+.tableCard {
+  width: 100%;
+  max-width: 980px;
+  padding: 28px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  backdrop-filter: blur(14px);
+}
+
+.table {
+  border-radius: 32px;
+  padding: 24px;
+  background: radial-gradient(circle, #276749, #123326);
+  margin: 20px 0;
+}
+
+.opponents {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.playerBox {
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.playerBox.active {
+  margin-top: 20px;
+  border: 2px solid #f7c873;
+}
+
+.miniCardRow {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gameCard.small {
+  width: 58px;
+  height: 84px;
+  font-size: 24px;
+}
+
+.gameCard.selected {
+  outline: 4px solid #f7c873;
+}
+
+.dangerButton {
+  background: #ff6b6b;
+  color: white;
+}
+
+.caboBanner {
+  color: #f7c873;
+  font-weight: bold;
+}
+
+.scoreBoard {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.winnerBox {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(247, 200, 115, 0.25),
+    rgba(255, 255, 255, 0.08)
+  );
+
+  border: 2px solid #f7c873;
+
+  box-shadow:
+    0 0 20px rgba(247, 200, 115, 0.4),
+    0 0 40px rgba(247, 200, 115, 0.2);
+}
+
+.winnerBox h1 {
+  margin: 8px 0;
+  font-size: 40px;
+}
+
+.winnerBox p {
+  margin: 4px 0;
+}
