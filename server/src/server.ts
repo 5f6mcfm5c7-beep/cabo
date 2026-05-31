@@ -426,7 +426,9 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
-        lobby.highlightedCards = []
+        lobby.highlightedCards = lobby.highlightedCards.filter(
+            (card) => card.playerId !== socket.id
+        )
 
         const player = lobby.players.find((player) => player.id === socket.id)
 
@@ -823,131 +825,131 @@ io.on('connection', (socket) => {
 
     socket.on(
         'swap-card',
-                ({
-                    code,
-                    cardIndex,
-                }: {
-                    code: string
-                    cardIndex: number
-                }) => {
-                    const lobby = lobbies[code]
+        ({
+            code,
+            cardIndex,
+        }: {
+            code: string
+            cardIndex: number
+        }) => {
+            const lobby = lobbies[code]
 
-                    if (!lobby) return
+            if (!lobby) return
 
-                    if (!isPlayersTurn(lobby, socket.id)) return
+            if (!isPlayersTurn(lobby, socket.id)) return
 
-                    const player = lobby.players.find(
-                        (player) => player.id === socket.id
-                    )
-
-                    if (!player) return
-
-                    if (player.drawnCard === null) return
-
-                    const oldCard = player.cards[cardIndex]
-
-                    if (oldCard === undefined) return
-
-                    player.cards[cardIndex] = player.drawnCard
-
-                    player.drawnCard = null
-                    player.drawSource = null
-
-                    lobby.discardPile.push(oldCard)
-                    lobby.discardLocked = false
-
-                    goToNextPlayer(lobby, code)
-
-                    io.to(code).emit('lobby-updated', lobby)
-                }
+            const player = lobby.players.find(
+                (player) => player.id === socket.id
             )
 
-            socket.on('call-cabo', (code: string) => {
-                const lobby = lobbies[code]
+            if (!player) return
 
-                if (!lobby) return
-                if (!isPlayersTurn(lobby, socket.id)) return
-                if (lobby.phase !== 'turn') return
-                if (lobby.caboCalledBy !== null) return
+            if (player.drawnCard === null) return
 
-                lobby.caboCalledBy = socket.id
-                lobby.turnsAfterCabo = 0
+            const oldCard = player.cards[cardIndex]
 
-                lobby.currentPlayer =
-                    (lobby.currentPlayer + 1) % lobby.players.length
+            if (oldCard === undefined) return
 
-                lobby.phase = 'turn'
+            player.cards[cardIndex] = player.drawnCard
 
-                io.to(code).emit('lobby-updated', lobby)
-            })
+            player.drawnCard = null
+            player.drawSource = null
 
-            socket.on('start-new-game', (code: string) => {
-                const lobby = lobbies[code]
+            lobby.discardPile.push(oldCard)
+            lobby.discardLocked = false
 
-                if (!lobby) return
-                if (socket.id !== lobby.hostId) return
-                if (lobby.phase !== 'game-over') return
+            goToNextPlayer(lobby, code)
 
-                const deck = createDeck()
+            io.to(code).emit('lobby-updated', lobby)
+        }
+    )
 
-                lobby.players = lobby.players.map((player, index) => ({
-                    ...player,
-                    cards: deck.slice(index * 4, index * 4 + 4),
-                    ready: false,
-                    drawnCard: null,
-                    totalScore: 0,
-                }))
+    socket.on('call-cabo', (code: string) => {
+        const lobby = lobbies[code]
 
-                const usedCards = lobby.players.length * 4
+        if (!lobby) return
+        if (!isPlayersTurn(lobby, socket.id)) return
+        if (lobby.phase !== 'turn') return
+        if (lobby.caboCalledBy !== null) return
 
-                lobby.drawPile = deck.slice(usedCards + 1)
-                lobby.discardPile = [deck[usedCards]!]
-                lobby.currentPlayer = 0
-                lobby.caboCalledBy = null
-                lobby.turnsAfterCabo = 0
-                lobby.roundScores = []
-                lobby.caboPenaltyApplied = false
-                lobby.kamikazePlayerId = null
-                lobby.phase = 'memorize'
-                lobby.discardLocked = false
-                lobby.highlightedCards = []
+        lobby.caboCalledBy = socket.id
+        lobby.turnsAfterCabo = 0
 
-                io.to(code).emit('game-started', lobby)
-            })
+        lobby.currentPlayer =
+            (lobby.currentPlayer + 1) % lobby.players.length
 
-            socket.on('start-next-round', (code: string) => {
-                const lobby = lobbies[code]
+        lobby.phase = 'turn'
 
-                if (!lobby) return
-                if (socket.id !== lobby.hostId) return
-                if (lobby.phase !== 'round-over') return
+        io.to(code).emit('lobby-updated', lobby)
+    })
 
-                const deck = createDeck()
+    socket.on('start-new-game', (code: string) => {
+        const lobby = lobbies[code]
 
-                lobby.players = lobby.players.map((player, index) => ({
-                    ...player,
-                    cards: deck.slice(index * 4, index * 4 + 4),
-                    ready: false,
-                    drawnCard: null,
-                    drawSource: null,
-                }))
+        if (!lobby) return
+        if (socket.id !== lobby.hostId) return
+        if (lobby.phase !== 'game-over') return
 
-                const usedCards = lobby.players.length * 4
+        const deck = createDeck()
 
-                lobby.drawPile = deck.slice(usedCards + 1)
-                lobby.discardPile = [deck[usedCards]!]
-                lobby.discardLocked = false
-                lobby.currentPlayer = 0
-                lobby.caboCalledBy = null
-                lobby.turnsAfterCabo = 0
-                lobby.roundScores = []
-                lobby.caboPenaltyApplied = false
-                lobby.kamikazePlayerId = null
-                lobby.phase = 'memorize'
-                lobby.highlightedCards = []
+        lobby.players = lobby.players.map((player, index) => ({
+            ...player,
+            cards: deck.slice(index * 4, index * 4 + 4),
+            ready: false,
+            drawnCard: null,
+            totalScore: 0,
+        }))
 
-                io.to(code).emit('game-started', lobby)
-            })
+        const usedCards = lobby.players.length * 4
+
+        lobby.drawPile = deck.slice(usedCards + 1)
+        lobby.discardPile = [deck[usedCards]!]
+        lobby.currentPlayer = 0
+        lobby.caboCalledBy = null
+        lobby.turnsAfterCabo = 0
+        lobby.roundScores = []
+        lobby.caboPenaltyApplied = false
+        lobby.kamikazePlayerId = null
+        lobby.phase = 'memorize'
+        lobby.discardLocked = false
+        lobby.highlightedCards = []
+
+        io.to(code).emit('game-started', lobby)
+    })
+
+    socket.on('start-next-round', (code: string) => {
+        const lobby = lobbies[code]
+
+        if (!lobby) return
+        if (socket.id !== lobby.hostId) return
+        if (lobby.phase !== 'round-over') return
+
+        const deck = createDeck()
+
+        lobby.players = lobby.players.map((player, index) => ({
+            ...player,
+            cards: deck.slice(index * 4, index * 4 + 4),
+            ready: false,
+            drawnCard: null,
+            drawSource: null,
+        }))
+
+        const usedCards = lobby.players.length * 4
+
+        lobby.drawPile = deck.slice(usedCards + 1)
+        lobby.discardPile = [deck[usedCards]!]
+        lobby.discardLocked = false
+        lobby.currentPlayer = 0
+        lobby.caboCalledBy = null
+        lobby.turnsAfterCabo = 0
+        lobby.roundScores = []
+        lobby.caboPenaltyApplied = false
+        lobby.kamikazePlayerId = null
+        lobby.phase = 'memorize'
+        lobby.highlightedCards = []
+
+        io.to(code).emit('game-started', lobby)
+    })
 
     socket.on('disconnect', () => {
         console.log('Player disconnected:', socket.id)
