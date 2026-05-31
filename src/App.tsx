@@ -31,11 +31,29 @@ type OnlineLobby = {
     name: string
     cards: number[]
     ready: boolean
+    drawnCard: number | null
+    drawSource: 'deck' | 'discard' | null
+    totalScore: number
   }[]
   drawPile: number[]
   discardPile: number[]
+  discardLocked: boolean
   currentPlayer: number
-  phase: 'lobby' | 'memorize' | 'turn'
+  caboCalledBy: string | null
+  turnsAfterCabo: number
+  roundScores: number[]
+  caboPenaltyApplied: boolean
+  kamikazePlayerId: string | null
+  phase:
+  | 'lobby'
+  | 'memorize'
+  | 'turn'
+  | 'action-choice'
+  | 'peek-own'
+  | 'peek-opponent'
+  | 'special-swap'
+  | 'round-over'
+  | 'game-over'
 }
 
 type CardPosition = {
@@ -105,14 +123,21 @@ function App() {
   const [roundScores, setRoundScores] = useState<number[]>([])
   const [caboPenaltyApplied, setCaboPenaltyApplied] = useState(false)
   const [kamikazePlayer, setKamikazePlayer] = useState<number | null>(null)
-  const [myPlayerId, setMyPlayerId] = useState('')
   const [revealedStartCards, setRevealedStartCards] = useState<number[]>([])
   const [myDrawnCard, setMyDrawnCard] = useState<number | null>(null)
-  
+  const [revealedOpponentCard, setRevealedOpponentCard] = useState<{
+    playerId: string
+    cardIndex: number
+  } | null>(null)
+  const [selectedSpecialSwapCard, setSelectedSpecialSwapCard] = useState<number | null>(null)
+  const [selectedOnlineSetCards, setSelectedOnlineSetCards] = useState<number[]>([])
+  const [onlineSetMessage, setOnlineSetMessage] = useState('')
+  const [isDeclaringOnlineSet, setIsDeclaringOnlineSet] = useState(false)
+  const [onlineNextRoundCountdown, setOnlineNextRoundCountdown] = useState(10)
+
   useEffect(() => {
     socket.on('connect', () => {
       console.log('Connected to server:', socket.id)
-      setMyPlayerId(socket.id!)
     })
 
     socket.on('lobby-created', (lobby: OnlineLobby) => {
@@ -121,6 +146,14 @@ function App() {
 
     socket.on('lobby-updated', (lobby: OnlineLobby) => {
       setOnlineLobby(lobby)
+
+      const ownPlayer = lobby.players.find((player) => player.id === socket.id)
+
+      if (!ownPlayer || ownPlayer.drawnCard === null) {
+        setMyDrawnCard(null)
+        setIsDeclaringOnlineSet(false)
+        setSelectedOnlineSetCards([])
+      }
     })
 
     socket.on('game-started', (lobby: OnlineLobby) => {
@@ -135,6 +168,17 @@ function App() {
       alert(message)
     })
 
+    socket.on('set-error', (message: string) => {
+      setOnlineSetMessage(message)
+      setMyDrawnCard(null)
+      setIsDeclaringOnlineSet(false)
+      setSelectedOnlineSetCards([])
+
+      setTimeout(() => {
+        setOnlineSetMessage('')
+      }, 2500)
+    })
+
     return () => {
       socket.off('connect')
       socket.off('lobby-created')
@@ -142,8 +186,39 @@ function App() {
       socket.off('lobby-error')
       socket.off('game-started')
       socket.off('draw-card-result')
+      socket.off('set-error')
     }
   }, [])
+
+  useEffect(() => {
+    if (!onlineLobby || onlineLobby.phase !== 'round-over') {
+      setOnlineNextRoundCountdown(10)
+      return
+    }
+
+    setOnlineNextRoundCountdown(10)
+
+    const countdownInterval = window.setInterval(() => {
+      setOnlineNextRoundCountdown((currentValue) =>
+        currentValue > 0 ? currentValue - 1 : 0
+      )
+    }, 1000)
+
+    const nextRoundTimeout =
+      socket.id === onlineLobby.hostId
+        ? window.setTimeout(() => {
+          socket.emit('start-next-round', onlineLobby.code)
+        }, 10000)
+        : undefined
+
+    return () => {
+      window.clearInterval(countdownInterval)
+
+      if (nextRoundTimeout !== undefined) {
+        window.clearTimeout(nextRoundTimeout)
+      }
+    }
+  }, [onlineLobby?.phase, onlineLobby?.code, onlineLobby?.hostId])
 
   const activePlayer = players[currentPlayer]
 
@@ -677,6 +752,7 @@ function App() {
             <p className="caboBanner">CABO wurde von {players[caboCalledBy].name} angesagt!</p>
           )}
 
+
           <button
             className="secondaryButton"
             onClick={() => {
@@ -860,7 +936,7 @@ function App() {
 
               {phase === 'round-over' && (
                 <button className="primaryButton" onClick={startNextRound}>
-                  Nächste Runde
+                  Nächste Runde ({onlineNextRoundCountdown})
                 </button>
               )}
 
@@ -891,6 +967,83 @@ function App() {
     const isMyTurn =
       onlineLobby.players[onlineLobby.currentPlayer]?.id === currentSocketId
 
+    if (onlineLobby.phase === 'round-over' || onlineLobby.phase === 'game-over') {
+      const caboCaller = onlineLobby.players.find(
+        (player) => player.id === onlineLobby.caboCalledBy
+      )
+
+      return (
+        <main className="page">
+          <section className="tableCard">
+            <p className="eyebrow">Runde beendet</p>
+            <h1>🏆 Rundenergebnis</h1>
+
+            {onlineLobby.kamikazePlayerId && (
+              <p className="caboBanner">
+                💀 Kamikaze!{' '}
+                {onlineLobby.players.find((player) => player.id === onlineLobby.kamikazePlayerId)?.name}
+                {' '}hat zwei 12er und zwei 13er. Alle anderen erhalten 50 Punkte.
+              </p>
+            )}
+
+            {caboCaller && !onlineLobby.kamikazePlayerId && (
+              <p className="caboBanner">
+                {onlineLobby.caboPenaltyApplied
+                  ? `${caboCaller.name} hatte nicht die niedrigste Punktzahl und erhält deshalb 5 Strafpunkte.`
+                  : `${caboCaller.name} hatte die niedrigste Punktzahl und erhält deshalb 0 Punkte.`}
+              </p>
+            )}
+
+            <div className="scoreBoard">
+              <h2>Rundenpunkte</h2>
+
+              {onlineLobby.players.map((player, index) => (
+                <p key={player.id}>
+                  {player.name}: +{onlineLobby.roundScores[index] ?? 0}
+                </p>
+              ))}
+
+              <hr />
+
+              <h2>Gesamtstand</h2>
+
+              {onlineLobby.players.map((player) => (
+                <p key={player.id}>
+                  {player.name}: {player.totalScore}
+                </p>
+              ))}
+
+              {onlineLobby.phase === 'round-over' && socket.id === onlineLobby.hostId && (
+                <button
+                  className="primaryButton"
+                  onClick={() => {
+                    socket.emit('start-next-round', onlineLobby.code)
+                  }}
+                >
+                  Nächste Runde ({onlineNextRoundCountdown})
+                </button>
+              )}
+
+              {onlineLobby.phase === 'game-over' && (
+                <div className="winnerBox">
+                  <p className="eyebrow">Spiel beendet</p>
+                  <h1>
+                    Verlierer:{' '}
+                    {
+                      [...onlineLobby.players].sort(
+                        (a, b) => b.totalScore - a.totalScore
+                      )[0]?.name
+                    }
+                  </h1>
+                  <p>Die Grenze von 100 Punkten wurde überschritten.</p>
+                </div>
+              )}
+            </div>
+          </section>
+        </main>
+      )
+    }
+
     return (
       <main className="page">
         <section className="tableCard">
@@ -900,10 +1053,29 @@ function App() {
           <p className="caboBanner">
             {onlineLobby.phase === 'memorize'
               ? '🧠 Startphase'
-              : isMyTurn
-                ? '🟢 Du bist am Zug'
-                : '⏳ Warte auf deinen Zug'}
+              : onlineLobby.phase === 'action-choice' && isMyTurn
+                ? '✨ Du kannst die Aktion nutzen oder überspringen.'
+                : onlineLobby.phase === 'peek-own' && isMyTurn
+                  ? '👀 Wähle eine eigene Karte zum kurzen Anschauen.'
+                  : onlineLobby.phase === 'peek-opponent' && isMyTurn
+                    ? '👀 Wähle eine gegnerische Karte zum kurzen Anschauen.'
+                    : onlineLobby.phase === 'special-swap' && isMyTurn
+                      ? selectedSpecialSwapCard === null
+                        ? '🔁 Wähle zuerst eine eigene Karte.'
+                        : '🔁 Wähle jetzt eine gegnerische Karte zum Tauschen.'
+                      : isMyTurn
+                        ? '🟢 Du bist am Zug'
+                        : '⏳ Warte auf deinen Zug'}
           </p>
+
+          {onlineLobby.caboCalledBy && (
+            <p className="caboBanner">
+              CABO wurde von{' '}
+              {onlineLobby.players.find((player) => player.id === onlineLobby.caboCalledBy)?.name}
+              {' '}angesagt!
+            </p>
+          )}
+
 
           <div className="scoreBoard">
             <h2>Startphase</h2>
@@ -914,23 +1086,80 @@ function App() {
               </p>
             ))}
 
-            <button
-              className="primaryButton"
-              onClick={() => {
-                socket.emit('draw-from-deck', onlineLobby.code)
-              }}
-            >
-              🂠 Karte ziehen
-            </button>
 
-            <button
-              className="secondaryButton"
-              onClick={() => {
-                socket.emit('end-turn', onlineLobby.code)
-              }}
-            >
-              🔄 Zug beenden
-            </button>
+            {isMyTurn && onlineLobby.phase === 'turn' && myDrawnCard === null && (
+              <button
+                className="primaryButton"
+                onClick={() => {
+                  socket.emit('draw-from-deck', onlineLobby.code)
+                }}
+              >
+                🂠 Karte ziehen
+              </button>
+            )}
+
+            {isMyTurn && onlineLobby.phase === 'turn' && (
+              <button
+                className="secondaryButton"
+                disabled={myDrawnCard !== null}
+                onClick={() => {
+                  socket.emit('end-turn', onlineLobby.code)
+                }}
+              >
+                🔄 Zug beenden
+              </button>
+            )}
+
+            {isMyTurn &&
+              onlineLobby.phase === 'turn' &&
+              myDrawnCard === null &&
+              onlineLobby.caboCalledBy === null && (
+                <button
+                  className="dangerButton"
+                  onClick={() => {
+                    socket.emit('call-cabo', onlineLobby.code)
+                  }}
+                >
+                  CABO ansagen
+                </button>
+              )}
+
+            {onlineSetMessage && (
+              <p className="caboBanner errorBanner">
+                {onlineSetMessage}
+              </p>
+            )}
+
+            {isMyTurn && onlineLobby.phase === 'action-choice' && (
+              <div className="drawnCardArea">
+                <p>Sonderaktion</p>
+
+                <button
+                  className="primaryButton"
+                  onClick={() => {
+                    const actionCard = onlineLobby.discardPile[onlineLobby.discardPile.length - 1]
+
+                    if (actionCard === undefined) return
+
+                    socket.emit('use-action', {
+                      code: onlineLobby.code,
+                      card: actionCard,
+                    })
+                  }}
+                >
+                  Aktion nutzen
+                </button>
+
+                <button
+                  className="secondaryButton"
+                  onClick={() => {
+                    socket.emit('skip-action', onlineLobby.code)
+                  }}
+                >
+                  Aktion überspringen
+                </button>
+              </div>
+            )}
 
             {myDrawnCard !== null && (
               <div className="drawnCardArea">
@@ -938,6 +1167,49 @@ function App() {
                 <div className="gameCard">
                   {myDrawnCard}
                 </div>
+                <p className="caboBanner">
+                  {me?.drawSource === 'deck'
+
+                    ? 'Wähle eine deiner Karten zum Tauschen oder klicke auf den Ablagestapel zum Abwerfen.'
+
+                    : 'Du hast vom Ablagestapel gezogen. Wähle eine eigene Karte zum Tauschen.'}
+                </p>
+                <button
+                  className="secondaryButton"
+                  onClick={() => {
+                    setIsDeclaringOnlineSet(true)
+                    setSelectedOnlineSetCards([])
+                    setOnlineSetMessage('')
+                  }}
+                >
+                  Satz gleicher Karten ablegen
+                </button>
+
+                {isDeclaringOnlineSet && (
+                  <p className="caboBanner">
+                    Wähle 2–4 gleiche Karten aus deiner Hand.
+                  </p>
+                )}
+
+                {isDeclaringOnlineSet && (
+                  <button
+                    className="primaryButton"
+                    disabled={selectedOnlineSetCards.length < 2}
+                    onClick={() => {
+                      socket.emit('declare-set', {
+                        code: onlineLobby.code,
+                        cardIndexes: selectedOnlineSetCards,
+                      })
+
+                      setIsDeclaringOnlineSet(false)
+                      setSelectedOnlineSetCards([])
+                      setMyDrawnCard(null)
+                    }}
+                  >
+                    Satz bestätigen
+                  </button>
+                )}
+
               </div>
             )}
 
@@ -953,9 +1225,43 @@ function App() {
                   <p>{player.name}</p>
 
                   <div className="miniCardRow">
-                    {player.cards.map((_, index) => (
-                      <button className="gameCard small" key={index}>
-                        ?
+                    {player.cards.map((card, index) => (
+                      <button
+                        className="gameCard small"
+                        key={index}
+                        onClick={() => {
+                          if (onlineLobby.phase === 'special-swap' && isMyTurn) {
+                            if (selectedSpecialSwapCard === null) return
+
+                            socket.emit('special-swap', {
+                              code: onlineLobby.code,
+                              ownCardIndex: selectedSpecialSwapCard,
+                              opponentId: player.id,
+                              opponentCardIndex: index,
+                            })
+
+                            setSelectedSpecialSwapCard(null)
+                            return
+                          }
+
+                          if (onlineLobby.phase !== 'peek-opponent') return
+                          if (!isMyTurn) return
+
+                          setRevealedOpponentCard({
+                            playerId: player.id,
+                            cardIndex: index,
+                          })
+
+                          setTimeout(() => {
+                            setRevealedOpponentCard(null)
+                            socket.emit('finish-peek-opponent', onlineLobby.code)
+                          }, 3000)
+                        }}
+                      >
+                        {revealedOpponentCard?.playerId === player.id &&
+                          revealedOpponentCard.cardIndex === index
+                          ? card
+                          : '?'}
                       </button>
                     ))}
                   </div>
@@ -969,10 +1275,30 @@ function App() {
                 <strong>🂠</strong>
               </div>
 
-              <div className="pile">
+              <button
+                className="pile"
+                onClick={() => {
+                  if (!isMyTurn) return
+
+                  if (myDrawnCard !== null) {
+                    if (me?.drawSource !== 'deck') return
+
+                    socket.emit('discard-drawn-card', onlineLobby.code)
+                    setMyDrawnCard(null)
+                    return
+                  }
+
+                  if (onlineLobby.discardLocked) return
+                  socket.emit('draw-from-discard', onlineLobby.code)
+                }}
+              >
                 <p>Ablagestapel</p>
-                <strong>{onlineLobby.discardPile[onlineLobby.discardPile.length - 1]}</strong>
-              </div>
+                <strong>
+                  {onlineLobby.discardLocked
+                    ? '🔒'
+                    : onlineLobby.discardPile[onlineLobby.discardPile.length - 1]}
+                </strong>
+              </button>
             </div>
 
             <div className="playerBox active">
@@ -981,9 +1307,57 @@ function App() {
               <div className="cardRow">
                 {me?.cards.map((card, index) => (
                   <button
-                    className="gameCard"
-                    key={index}
+                    className={
+                      isDeclaringOnlineSet && selectedOnlineSetCards.includes(index)
+                        ? 'gameCard selected'
+                        : 'gameCard'
+                    }
+
                     onClick={() => {
+
+                      if (isDeclaringOnlineSet && isMyTurn && myDrawnCard !== null) {
+                        if (selectedOnlineSetCards.includes(index)) {
+                          setSelectedOnlineSetCards(
+                            selectedOnlineSetCards.filter((cardIndex) => cardIndex !== index)
+                          )
+                          return
+                        }
+
+                        if (selectedOnlineSetCards.length >= 4) return
+
+                        setSelectedOnlineSetCards([...selectedOnlineSetCards, index])
+                        return
+                      }
+
+                      if (onlineLobby.phase === 'special-swap' && isMyTurn) {
+
+                        setSelectedSpecialSwapCard(index)
+
+                        return
+
+                      }
+
+                      if (onlineLobby.phase === 'peek-own' && isMyTurn) {
+                        setRevealedStartCards([index])
+
+                        setTimeout(() => {
+                          setRevealedStartCards([])
+                          socket.emit('finish-peek-own', onlineLobby.code)
+                        }, 3000)
+
+                        return
+                      }
+
+                      if (myDrawnCard !== null && isMyTurn) {
+                        socket.emit('swap-card', {
+                          code: onlineLobby.code,
+                          cardIndex: index,
+                        })
+
+                        setMyDrawnCard(null)
+                        return
+                      }
+
                       if (onlineLobby.phase !== 'memorize') return
 
                       if (revealedStartCards.includes(index)) return
@@ -1030,7 +1404,7 @@ function App() {
         <button
           className="secondaryButton"
           onClick={() => {
-            socket.emit('create-lobby', 'Max')
+            socket.emit('create-lobby', onlineName || 'Max')
           }}
         >
           Online-Lobby erstellen

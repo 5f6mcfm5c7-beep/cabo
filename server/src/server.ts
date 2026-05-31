@@ -25,6 +25,7 @@ type Lobby = {
     turnsAfterCabo: number
     roundScores: number[]
     caboPenaltyApplied: boolean
+    kamikazePlayerId: string | null
     phase:
     | 'lobby'
     | 'memorize'
@@ -35,6 +36,7 @@ type Lobby = {
     | 'special-swap'
     | 'declare-set'
     | 'round-over'
+    | 'game-over'
 }
 
 const app = express()
@@ -93,7 +95,51 @@ function handScore(cards: number[]) {
     return cards.reduce((sum, card) => sum + card, 0)
 }
 
+function isKamikaze(cards: number[]) {
+    const twelves = cards.filter((card) => card === 12).length
+    const thirteens = cards.filter((card) => card === 13).length
+
+    return twelves === 2 && thirteens === 2
+}
+
 function finishRound(lobby: Lobby) {
+
+    const kamikazePlayer = lobby.players.find((player) =>
+        isKamikaze(player.cards)
+    )
+
+    if (kamikazePlayer) {
+        const roundScores = lobby.players.map((player) =>
+            player.id === kamikazePlayer.id ? 0 : 50
+        )
+
+        lobby.players = lobby.players.map((player, index) => {
+            let newTotal = player.totalScore + (roundScores[index] ?? 0)
+
+            if (newTotal === 100) newTotal = 50
+
+            return {
+                ...player,
+                totalScore: newTotal,
+                ready: false,
+                drawnCard: null,
+                drawSource: null,
+            }
+        })
+
+        lobby.roundScores = roundScores
+        lobby.caboPenaltyApplied = false
+        lobby.kamikazePlayerId = kamikazePlayer.id
+
+        if (lobby.players.some((player) => player.totalScore > 100)) {
+            lobby.phase = 'game-over'
+        } else {
+            lobby.phase = 'round-over'
+        }
+
+        return
+    }
+
     const rawScores = lobby.players.map((player) => handScore(player.cards))
     const lowestScore = Math.min(...rawScores)
 
@@ -118,7 +164,7 @@ function finishRound(lobby: Lobby) {
     })
 
     lobby.players = lobby.players.map((player, index) => {
-        let newTotal = player.totalScore + roundScores[index]
+        let newTotal = player.totalScore + (roundScores[index] ?? 0)
 
         if (newTotal === 100) newTotal = 50
 
@@ -135,7 +181,11 @@ function finishRound(lobby: Lobby) {
     lobby.caboPenaltyApplied =
         caboCallerIndex !== -1 && !caboCallerHasLowestScore
 
-    lobby.phase = 'round-over'
+    if (lobby.players.some((player) => player.totalScore > 100)) {
+        lobby.phase = 'game-over'
+    } else {
+        lobby.phase = 'round-over'
+    }
 }
 
 function advanceTurn(lobby: Lobby) {
@@ -189,6 +239,7 @@ io.on('connection', (socket) => {
             turnsAfterCabo: 0,
             roundScores: [],
             caboPenaltyApplied: false,
+            kamikazePlayerId: null,
             phase: 'lobby',
         }
         lobbies[code] = lobby
@@ -204,6 +255,11 @@ io.on('connection', (socket) => {
 
             if (!lobby) {
                 socket.emit('lobby-error', 'Lobby nicht gefunden.')
+                return
+            }
+
+            if (lobby.players.length >= 5) {
+                socket.emit('lobby-error', 'Diese Lobby ist bereits voll.')
                 return
             }
 
@@ -251,6 +307,7 @@ io.on('connection', (socket) => {
         lobby.turnsAfterCabo = 0
         lobby.roundScores = []
         lobby.caboPenaltyApplied = false
+        lobby.kamikazePlayerId = null
         lobby.phase = 'memorize'
 
         console.log('GAME STARTED')
@@ -286,7 +343,6 @@ io.on('connection', (socket) => {
         if (!lobby) return
 
         if (!isPlayersTurn(lobby, socket.id)) return
-        if (lobby.discardLocked) return
 
         const player = lobby.players.find(
             (player) => player.id === socket.id
@@ -691,6 +747,39 @@ io.on('connection', (socket) => {
         lobby.phase = 'turn'
 
         io.to(code).emit('lobby-updated', lobby)
+    })
+
+    socket.on('start-next-round', (code: string) => {
+        const lobby = lobbies[code]
+
+        if (!lobby) return
+        if (socket.id !== lobby.hostId) return
+        if (lobby.phase !== 'round-over') return
+
+        const deck = createDeck()
+
+        lobby.players = lobby.players.map((player, index) => ({
+            ...player,
+            cards: deck.slice(index * 4, index * 4 + 4),
+            ready: false,
+            drawnCard: null,
+            drawSource: null,
+        }))
+
+        const usedCards = lobby.players.length * 4
+
+        lobby.drawPile = deck.slice(usedCards + 1)
+        lobby.discardPile = [deck[usedCards]!]
+        lobby.discardLocked = false
+        lobby.currentPlayer = 0
+        lobby.caboCalledBy = null
+        lobby.turnsAfterCabo = 0
+        lobby.roundScores = []
+        lobby.caboPenaltyApplied = false
+        lobby.kamikazePlayerId = null
+        lobby.phase = 'memorize'
+
+        io.to(code).emit('game-started', lobby)
     })
 
     socket.on('disconnect', () => {
