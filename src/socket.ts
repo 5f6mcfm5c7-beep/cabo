@@ -1,5 +1,5 @@
 import { io } from 'socket.io-client'
 
-const serverUrl = `http://${window.location.hostname}:3001`
+const serverUrl = 'http://94.250.201.7:3001'
 
 export const socket = io(serverUrl)
