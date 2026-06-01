@@ -1144,7 +1144,9 @@ io.on('connection', (socket) => {
 
         socket.leave(code)
 
-        leaveLobby(lobby, code, socket.id)
+        if (lobby.phase === 'lobby') {
+            leaveLobby(lobby, code, socket.id)
+        }
 
         socket.emit('lobby-left')
     })
