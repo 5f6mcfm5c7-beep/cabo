@@ -28,6 +28,7 @@ type Lobby = {
     discardPile: number[]
     discardLocked: boolean
     highlightedCards: HighlightedCard[]
+    memorizedPlayerIds: string[]
     currentPlayer: number
     caboCalledBy: string | null
     turnsAfterCabo: number
@@ -266,6 +267,10 @@ function finishMemorizeForPlayer(lobby: Lobby, code: string, socketId: string) {
 
     player.ready = true
 
+    if (!lobby.memorizedPlayerIds.includes(player.playerId)) {
+        lobby.memorizedPlayerIds.push(player.playerId)
+    }
+
     const allReady = lobby.players.every((player) => player.ready)
 
     if (allReady) {
@@ -368,6 +373,7 @@ io.on('connection', (socket) => {
         }: {
             playerName: string
             playerId: string
+            memorizedPlayerIds: [],
         }) => {
 
             console.log('Create lobby request from:', playerName)
@@ -500,6 +506,7 @@ io.on('connection', (socket) => {
         lobby.kamikazePlayerId = null
         lobby.phase = 'memorize'
         lobby.highlightedCards = []
+        lobby.memorizedPlayerIds = []
 
         console.log('GAME STARTED')
         console.log(lobby.players)
@@ -529,6 +536,7 @@ io.on('connection', (socket) => {
             if (type === 'memorize') {
                 if (lobby.phase !== 'memorize') return
                 if (player.ready) return
+                if (lobby.memorizedPlayerIds.includes(player.playerId)) return
 
                 const ownMemorizeHighlights = lobby.highlightedCards.filter(
                     (card) => card.playerId === socket.id && card.type === 'memorize'
@@ -1110,6 +1118,7 @@ io.on('connection', (socket) => {
         lobby.phase = 'memorize'
         lobby.discardLocked = false
         lobby.highlightedCards = []
+        lobby.memorizedPlayerIds = []
 
         io.to(code).emit('game-started', lobby)
     })
@@ -1144,6 +1153,7 @@ io.on('connection', (socket) => {
         lobby.kamikazePlayerId = null
         lobby.phase = 'memorize'
         lobby.highlightedCards = []
+        lobby.memorizedPlayerIds = []
 
         io.to(code).emit('game-started', lobby)
     })
