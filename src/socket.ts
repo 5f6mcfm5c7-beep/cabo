@@ -1,5 +1,6 @@
 import { io } from 'socket.io-client'
 
-const serverUrl = 'http://94.250.201.7:3001'
+const serverUrl =
+  'https://merchants-batch-end-bbs.trycloudflare.com'
 
 export const socket = io(serverUrl)
