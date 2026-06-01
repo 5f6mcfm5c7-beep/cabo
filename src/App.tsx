@@ -10,8 +10,10 @@ type OnlineLobby = {
   }[]
   code: string
   hostId: string
+  memorizedPlayerIds: string[]
   players: {
     id: string
+    playerId: string
     name: string
     cards: number[]
     ready: boolean
@@ -719,6 +721,9 @@ function App() {
                       }
 
                       if (onlineLobby.phase !== 'memorize') return
+
+                      if (me?.ready) return
+                      if (me && onlineLobby.memorizedPlayerIds.includes(me.playerId)) return
 
                       if (isHighlighted(currentSocketId, index)) return
 

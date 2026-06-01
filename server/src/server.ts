@@ -399,6 +399,7 @@ io.on('connection', (socket) => {
                 discardPile: [],
                 discardLocked: false,
                 highlightedCards: [],
+                memorizedPlayerIds: [],
                 currentPlayer: 0,
                 caboCalledBy: null,
                 turnsAfterCabo: 0,
