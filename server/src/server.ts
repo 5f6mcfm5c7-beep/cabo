@@ -1142,9 +1142,11 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
+        socket.leave(code)
+
         leaveLobby(lobby, code, socket.id)
 
-        socket.leave(code)
+        socket.emit('lobby-left')
     })
 
     socket.on('disconnect', () => {
