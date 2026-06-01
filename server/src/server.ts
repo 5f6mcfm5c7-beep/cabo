@@ -5,6 +5,7 @@ import { Server } from 'socket.io'
 
 type Player = {
     id: string
+    playerId: string
     name: string
     cards: number[]
     ready: boolean
@@ -220,54 +221,230 @@ function goToNextPlayer(lobby: Lobby, code?: string) {
     advanceTurn(lobby, code)
 }
 
+function reconnectPlayer(lobby: Lobby, oldSocketId: string, newSocketId: string) {
+    lobby.players = lobby.players.map((player) =>
+        player.id === oldSocketId
+            ? {
+                ...player,
+                id: newSocketId,
+            }
+            : player
+    )
+
+    if (lobby.hostId === oldSocketId) {
+        lobby.hostId = newSocketId
+    }
+
+    if (lobby.caboCalledBy === oldSocketId) {
+        lobby.caboCalledBy = newSocketId
+    }
+
+    if (lobby.kamikazePlayerId === oldSocketId) {
+        lobby.kamikazePlayerId = newSocketId
+    }
+
+    lobby.highlightedCards = lobby.highlightedCards.map((card) =>
+        card.playerId === oldSocketId
+            ? {
+                ...card,
+                playerId: newSocketId,
+            }
+            : card
+    )
+}
+
+function finishMemorizeForPlayer(lobby: Lobby, code: string, socketId: string) {
+    if (lobby.phase !== 'memorize') return
+
+    const player = lobby.players.find((player) => player.id === socketId)
+
+    if (!player) return
+
+    lobby.highlightedCards = lobby.highlightedCards.filter(
+        (card) => !(card.playerId === socketId && card.type === 'memorize')
+    )
+
+    player.ready = true
+
+    const allReady = lobby.players.every((player) => player.ready)
+
+    if (allReady) {
+        lobby.phase = 'turn'
+        lobby.currentPlayer = 0
+    }
+
+    io.to(code).emit('lobby-updated', lobby)
+}
+
+function finishPeekOwn(lobby: Lobby, code: string, socketId: string) {
+    if (!isPlayersTurn(lobby, socketId)) return
+    if (lobby.phase !== 'peek-own') return
+
+    lobby.highlightedCards = lobby.highlightedCards.filter(
+        (card) => card.type !== 'peek-own'
+    )
+
+    goToNextPlayer(lobby, code)
+
+    io.to(code).emit('lobby-updated', lobby)
+}
+
+function finishPeekOpponent(lobby: Lobby, code: string, socketId: string) {
+    if (!isPlayersTurn(lobby, socketId)) return
+    if (lobby.phase !== 'peek-opponent') return
+
+    lobby.highlightedCards = lobby.highlightedCards.filter(
+        (card) => card.type !== 'peek-opponent'
+    )
+
+    goToNextPlayer(lobby, code)
+
+    io.to(code).emit('lobby-updated', lobby)
+}
+
+function finishMemorizeForPersistentPlayer(lobby: Lobby, code: string, persistentPlayerId: string) {
+    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+
+    if (!player) return
+
+    finishMemorizeForPlayer(lobby, code, player.id)
+}
+
+function finishPeekOwnForPersistentPlayer(lobby: Lobby, code: string, persistentPlayerId: string) {
+    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+
+    if (!player) return
+
+    finishPeekOwn(lobby, code, player.id)
+}
+
+function finishPeekOpponentForPersistentPlayer(lobby: Lobby, code: string, persistentPlayerId: string) {
+    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+
+    if (!player) return
+
+    finishPeekOpponent(lobby, code, player.id)
+}
+
+function leaveLobby(lobby: Lobby, code: string, socketId: string) {
+    const leavingPlayerIndex = lobby.players.findIndex(
+        (player) => player.id === socketId
+    )
+
+    if (leavingPlayerIndex === -1) return
+
+    lobby.players = lobby.players.filter(
+        (player) => player.id !== socketId
+    )
+
+    lobby.highlightedCards = lobby.highlightedCards.filter(
+        (card) => card.playerId !== socketId
+    )
+
+    if (lobby.players.length === 0) {
+        delete lobbies[code]
+        return
+    }
+
+    if (lobby.hostId === socketId) {
+        lobby.hostId = lobby.players[0]!.id
+    }
+
+    if (lobby.currentPlayer >= lobby.players.length) {
+        lobby.currentPlayer = 0
+    }
+
+    io.to(code).emit('lobby-updated', lobby)
+}
+
 io.on('connection', (socket) => {
     console.log('Player connected:', socket.id)
 
-    socket.on('create-lobby', (playerName: string) => {
+    socket.on(
+        'create-lobby',
+        ({
+            playerName,
+            playerId,
+        }: {
+            playerName: string
+            playerId: string
+        }) => {
 
-        console.log('Create lobby request from:', playerName)
+            console.log('Create lobby request from:', playerName)
 
-        const code = makeLobbyCode()
+            const code = makeLobbyCode()
 
-        const lobby: Lobby = {
-            code,
-            hostId: socket.id,
-            players: [
-                {
-                    id: socket.id,
-                    name: playerName,
-                    cards: [],
-                    ready: false,
-                    drawnCard: null,
-                    drawSource: null,
-                    totalScore: 0,
-                }
-            ],
-            drawPile: [],
-            discardPile: [],
-            discardLocked: false,
-            highlightedCards: [],
-            currentPlayer: 0,
-            caboCalledBy: null,
-            turnsAfterCabo: 0,
-            roundScores: [],
-            caboPenaltyApplied: false,
-            kamikazePlayerId: null,
-            phase: 'lobby',
-        }
-        lobbies[code] = lobby
-        socket.join(code)
+            const lobby: Lobby = {
+                code,
+                hostId: socket.id,
+                players: [
+                    {
+                        id: socket.id,
+                        playerId,
+                        name: playerName,
+                        cards: [],
+                        ready: false,
+                        drawnCard: null,
+                        drawSource: null,
+                        totalScore: 0,
+                    }
+                ],
+                drawPile: [],
+                discardPile: [],
+                discardLocked: false,
+                highlightedCards: [],
+                currentPlayer: 0,
+                caboCalledBy: null,
+                turnsAfterCabo: 0,
+                roundScores: [],
+                caboPenaltyApplied: false,
+                kamikazePlayerId: null,
+                phase: 'lobby',
+            }
+            lobbies[code] = lobby
+            socket.join(code)
 
-        socket.emit('lobby-created', lobby)
-    })
+            socket.emit('lobby-created', lobby)
+        })
 
     socket.on(
         'join-lobby',
-        ({ code, playerName }: { code: string; playerName: string }) => {
+        ({
+            code,
+            playerName,
+            playerId,
+        }: {
+            code: string
+            playerName: string
+            playerId: string
+        }) => {
             const lobby = lobbies[code]
 
             if (!lobby) {
                 socket.emit('lobby-error', 'Lobby nicht gefunden.')
+                return
+            }
+
+            const existingPlayer = lobby.players.find(
+                (player) => player.playerId === playerId
+            )
+
+            if (existingPlayer) {
+                const oldSocketId = existingPlayer.id
+
+                reconnectPlayer(lobby, oldSocketId, socket.id)
+
+                const reconnectedPlayer = lobby.players.find(
+                    (player) => player.playerId === playerId
+                )
+
+                if (reconnectedPlayer) {
+                    reconnectedPlayer.name = playerName
+                }
+
+                socket.join(code)
+                socket.emit('lobby-created', lobby)
+                io.to(code).emit('lobby-updated', lobby)
                 return
             }
 
@@ -278,6 +455,7 @@ io.on('connection', (socket) => {
 
             lobby.players.push({
                 id: socket.id,
+                playerId,
                 name: playerName,
                 cards: [],
                 ready: false,
@@ -289,8 +467,7 @@ io.on('connection', (socket) => {
             socket.join(code)
 
             io.to(code).emit('lobby-updated', lobby)
-        }
-    )
+        })
 
     socket.on('start-game', (code: string) => {
         const lobby = lobbies[code]
@@ -361,6 +538,36 @@ io.on('connection', (socket) => {
                         type,
                     },
                 ]
+
+                if (type === 'memorize') {
+                    const ownMemorizeHighlights = lobby.highlightedCards.filter(
+                        (card) => card.playerId === socket.id && card.type === 'memorize'
+                    )
+
+                    if (ownMemorizeHighlights.length >= 2) {
+                        const player = lobby.players.find((player) => player.id === socket.id)
+
+                        if (!player) return
+
+                        const persistentPlayerId = player.playerId
+
+                        setTimeout(() => {
+                            finishMemorizeForPersistentPlayer(lobby, code, persistentPlayerId)
+                        }, 5000)
+                    }
+                }
+
+                if (type === 'peek-own') {
+                    const player = lobby.players.find((player) => player.id === socket.id)
+
+                    if (!player) return
+
+                    const persistentPlayerId = player.playerId
+
+                    setTimeout(() => {
+                        finishPeekOwnForPersistentPlayer(lobby, code, persistentPlayerId)
+                    }, 3000)
+                }
             }
 
             io.to(code).emit('lobby-updated', lobby)
@@ -405,6 +612,18 @@ io.on('connection', (socket) => {
                         type,
                     },
                 ]
+
+                if (type === 'peek-opponent') {
+                    const player = lobby.players.find((player) => player.id === socket.id)
+
+                    if (!player) return
+
+                    const persistentPlayerId = player.playerId
+
+                    setTimeout(() => {
+                        finishPeekOpponentForPersistentPlayer(lobby, code, persistentPlayerId)
+                    }, 3000)
+                }
             }
 
             io.to(code).emit('lobby-updated', lobby)
@@ -426,24 +645,7 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
-        lobby.highlightedCards = lobby.highlightedCards.filter(
-            (card) => card.playerId !== socket.id
-        )
-
-        const player = lobby.players.find((player) => player.id === socket.id)
-
-        if (!player) return
-
-        player.ready = true
-
-        const allReady = lobby.players.every((player) => player.ready)
-
-        if (allReady) {
-            lobby.phase = 'turn'
-            lobby.currentPlayer = 0
-        }
-
-        io.to(code).emit('lobby-updated', lobby)
+        finishMemorizeForPlayer(lobby, code, socket.id)
     })
 
     socket.on('end-turn', (code: string) => {
@@ -726,15 +928,7 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
-        if (!isPlayersTurn(lobby, socket.id)) return
-
-        if (lobby.phase !== 'peek-own') return
-
-        lobby.highlightedCards = []
-
-        goToNextPlayer(lobby, code)
-
-        io.to(code).emit('lobby-updated', lobby)
+        finishPeekOwn(lobby, code, socket.id)
     })
 
     socket.on('finish-peek-opponent', (code: string) => {
@@ -742,15 +936,7 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
-        if (!isPlayersTurn(lobby, socket.id)) return
-
-        if (lobby.phase !== 'peek-opponent') return
-
-        lobby.highlightedCards = []
-
-        goToNextPlayer(lobby, code)
-
-        io.to(code).emit('lobby-updated', lobby)
+        finishPeekOpponent(lobby, code, socket.id)
     })
 
     socket.on(
@@ -949,6 +1135,16 @@ io.on('connection', (socket) => {
         lobby.highlightedCards = []
 
         io.to(code).emit('game-started', lobby)
+    })
+
+    socket.on('leave-lobby', (code: string) => {
+        const lobby = lobbies[code]
+
+        if (!lobby) return
+
+        leaveLobby(lobby, code, socket.id)
+
+        socket.leave(code)
     })
 
     socket.on('disconnect', () => {

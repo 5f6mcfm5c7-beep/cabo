@@ -338,6 +338,12 @@ button {
     padding: 0.75rem;
   }
 
+  .winnerBox h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin: 0.6rem 0 0.7rem;
+  }
+
   .playerBox.active {
     width: calc(100% + 24px);
     margin-left: -12px;
@@ -436,5 +442,45 @@ button {
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
+  }
+}
+
+.lobbyDetailsBar {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d8dee9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.lobbyDetailsBar strong {
+  color: #f7c873;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .lobbyDetailsBar {
+    margin-top: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+  }
+}
+
+.leaveLobbyButton {
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .leaveLobbyButton {
+    width: 100%;
+    margin-top: 0.35rem;
   }
 }

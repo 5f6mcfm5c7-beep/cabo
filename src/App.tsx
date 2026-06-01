@@ -40,7 +40,7 @@ type OnlineLobby = {
 
 function App() {
   const [onlineLobby, setOnlineLobby] = useState<OnlineLobby | null>(null)
-  const [onlineName, setOnlineName] = useState('Max')
+  const [onlineName, setOnlineName] = useState('')
   const [onlineCode, setOnlineCode] = useState('')
   const [revealedStartCards, setRevealedStartCards] = useState<number[]>([])
   const [myDrawnCard, setMyDrawnCard] = useState<number | null>(null)
@@ -53,14 +53,106 @@ function App() {
   const [onlineSetMessage, setOnlineSetMessage] = useState('')
   const [isDeclaringOnlineSet, setIsDeclaringOnlineSet] = useState(false)
   const [onlineNextRoundCountdown, setOnlineNextRoundCountdown] = useState(10)
+  const [isConfirmingLeaveLobby, setIsConfirmingLeaveLobby] = useState(false)
+
+  const [playerId] = useState(() => {
+    const existingId = localStorage.getItem('cabo-player-id')
+
+    if (existingId) return existingId
+
+    const newId =
+      crypto.randomUUID?.() ??
+      Math.random().toString(36).slice(2) + Date.now().toString(36)
+    localStorage.setItem('cabo-player-id', newId)
+
+    return newId
+  })
+
+  function saveLastLobby(code: string, name: string) {
+    localStorage.setItem('cabo-last-lobby-code', code)
+    localStorage.setItem('cabo-last-player-name', name)
+  }
+
+  function clearLastLobby() {
+    localStorage.removeItem('cabo-last-lobby-code')
+    localStorage.removeItem('cabo-last-player-name')
+  }
+
+  function rejoinLastLobby() {
+    const lastCode = localStorage.getItem('cabo-last-lobby-code')
+    const lastName = localStorage.getItem('cabo-last-player-name')
+
+    if (!lastCode || !lastName) return
+
+    socket.emit('join-lobby', {
+      code: lastCode,
+      playerName: lastName,
+      playerId,
+    })
+  }
+
+  function syncRevealStateFromLobby(lobby: OnlineLobby) {
+    const ownPlayer = lobby.players.find((player) => player.id === socket.id)
+
+    if (!ownPlayer) {
+      setRevealedStartCards([])
+      setRevealedOpponentCard(null)
+      return
+    }
+
+    const ownMemorizeHighlights = lobby.highlightedCards
+      .filter(
+        (card) => card.playerId === ownPlayer.id && card.type === 'memorize'
+      )
+      .map((card) => card.cardIndex)
+
+    const ownPeekHighlights = lobby.highlightedCards
+      .filter(
+        (card) => card.playerId === ownPlayer.id && card.type === 'peek-own'
+      )
+      .map((card) => card.cardIndex)
+
+    if (lobby.phase === 'memorize') {
+      setRevealedStartCards(ownMemorizeHighlights)
+    } else if (lobby.phase === 'peek-own') {
+      setRevealedStartCards(ownPeekHighlights)
+    } else {
+      setRevealedStartCards([])
+    }
+
+    const opponentPeekHighlight = lobby.highlightedCards.find(
+      (card) => card.type === 'peek-opponent'
+    )
+
+    if (opponentPeekHighlight && lobby.phase === 'peek-opponent') {
+      setRevealedOpponentCard({
+        playerId: opponentPeekHighlight.playerId,
+        cardIndex: opponentPeekHighlight.cardIndex,
+      })
+    } else if (lobby.phase !== 'peek-opponent') {
+      setRevealedOpponentCard(null)
+    }
+  }
 
   useEffect(() => {
     socket.on('connect', () => {
       console.log('Connected to server:', socket.id)
+      rejoinLastLobby()
     })
 
     socket.on('lobby-created', (lobby: OnlineLobby) => {
       setOnlineLobby(lobby)
+
+      const ownPlayer = lobby.players.find((player) => player.id === socket.id)
+
+      if (ownPlayer) {
+        setOnlineName(ownPlayer.name)
+        saveLastLobby(lobby.code, ownPlayer.name)
+      }
+
+      setMyDrawnCard(ownPlayer?.drawnCard ?? null)
+
+      syncRevealStateFromLobby(lobby)
     })
 
     socket.on('lobby-updated', (lobby: OnlineLobby) => {
@@ -68,8 +160,16 @@ function App() {
 
       const ownPlayer = lobby.players.find((player) => player.id === socket.id)
 
+      if (ownPlayer) {
+        setOnlineName(ownPlayer.name)
+        saveLastLobby(lobby.code, ownPlayer.name)
+      }
+
+      setMyDrawnCard(ownPlayer?.drawnCard ?? null)
+
+      syncRevealStateFromLobby(lobby)
+
       if (!ownPlayer || ownPlayer.drawnCard === null) {
-        setMyDrawnCard(null)
         setIsDeclaringOnlineSet(false)
         setSelectedOnlineSetCards([])
       }
@@ -91,6 +191,8 @@ function App() {
     })
 
     socket.on('lobby-error', (message: string) => {
+      clearLastLobby()
+      setOnlineLobby(null)
       alert(message)
     })
 
@@ -146,8 +248,43 @@ function App() {
     }
   }, [onlineLobby?.phase, onlineLobby?.code, onlineLobby?.hostId])
 
+  useEffect(() => {
+    if (!isConfirmingLeaveLobby) return
+
+    const resetLeaveConfirmationTimeout = window.setTimeout(() => {
+      setIsConfirmingLeaveLobby(false)
+    }, 10000)
+
+    return () => {
+      window.clearTimeout(resetLeaveConfirmationTimeout)
+    }
+  }, [isConfirmingLeaveLobby])
+
+  function leaveLobbyWithConfirmation() {
+    if (!isConfirmingLeaveLobby) {
+      setIsConfirmingLeaveLobby(true)
+      return
+    }
+
+    if (onlineLobby) {
+      socket.emit('leave-lobby', onlineLobby.code)
+    }
+
+    clearLastLobby()
+    setOnlineLobby(null)
+    setOnlineCode('')
+    setMyDrawnCard(null)
+    setRevealedStartCards([])
+    setRevealedOpponentCard(null)
+    setSelectedSpecialSwapCard(null)
+    setSelectedOnlineSetCards([])
+    setOnlineSetMessage('')
+    setIsDeclaringOnlineSet(false)
+    setIsConfirmingLeaveLobby(false)
+  }
+
   if (onlineLobby && onlineLobby.phase !== 'lobby') {
-    const currentSocketId = socket.id
+    const currentSocketId = socket.id ?? ''
     const me = onlineLobby.players.find((player) => player.id === currentSocketId)
     const opponents = onlineLobby.players.filter((player) => player.id !== currentSocketId)
     const isMyTurn =
@@ -308,9 +445,6 @@ function App() {
             {statusMessage()}
           </p>
 
-          <div className="scoreBoard">
-
-          </div>
           <div className="table">
             <div className="opponents">
               {opponents.map((player) => (
@@ -351,6 +485,13 @@ function App() {
                           if (onlineLobby.phase !== 'peek-opponent') return
                           if (!isMyTurn) return
 
+                          const opponentPeekHighlight = onlineLobby.highlightedCards.find(
+                            (card) => card.type === 'peek-opponent'
+                          )
+
+                          if (opponentPeekHighlight) return
+                          if (revealedOpponentCard !== null) return
+
                           socket.emit('highlight-target-card', {
                             code: onlineLobby.code,
                             playerId: player.id,
@@ -363,10 +504,6 @@ function App() {
                             cardIndex: index,
                           })
 
-                          setTimeout(() => {
-                            setRevealedOpponentCard(null)
-                            socket.emit('finish-peek-opponent', onlineLobby.code)
-                          }, 3000)
                         }}
                       >
                         {revealedOpponentCard?.playerId === player.id &&
@@ -541,6 +678,8 @@ function App() {
                       if (onlineLobby.phase === 'special-swap' && isMyTurn) {
                         setSelectedSpecialSwapCard(index)
 
+                        socket.emit('clear-highlights', onlineLobby.code)
+
                         socket.emit('highlight-card', {
                           code: onlineLobby.code,
                           cardIndex: index,
@@ -551,6 +690,13 @@ function App() {
                       }
 
                       if (onlineLobby.phase === 'peek-own' && isMyTurn) {
+                        const ownPeekHighlight = onlineLobby.highlightedCards.find(
+                          (card) => card.playerId === currentSocketId && card.type === 'peek-own'
+                        )
+
+                        if (ownPeekHighlight) return
+                        if (revealedStartCards.length > 0) return
+
                         setRevealedStartCards([index])
 
                         socket.emit('highlight-card', {
@@ -558,11 +704,6 @@ function App() {
                           cardIndex: index,
                           type: 'peek-own',
                         })
-
-                        setTimeout(() => {
-                          setRevealedStartCards([])
-                          socket.emit('finish-peek-own', onlineLobby.code)
-                        }, 3000)
 
                         return
                       }
@@ -578,7 +719,19 @@ function App() {
                       }
 
                       if (onlineLobby.phase !== 'memorize') return
+
+                      if (isHighlighted(currentSocketId, index)) return
+
+                      const ownMemorizeHighlights = onlineLobby.highlightedCards.filter(
+
+                        (card) => card.playerId === currentSocketId && card.type === 'memorize'
+
+                      )
+
+                      if (ownMemorizeHighlights.length >= 2) return
+
                       if (revealedStartCards.includes(index)) return
+
                       if (revealedStartCards.length >= 2) return
 
                       socket.emit('highlight-card', {
@@ -591,12 +744,6 @@ function App() {
 
                       setRevealedStartCards(newCards)
 
-                      if (newCards.length === 2) {
-                        setTimeout(() => {
-                          setRevealedStartCards([])
-                          socket.emit('start-cards-done', onlineLobby.code)
-                        }, 5000)
-                      }
                     }}
                   >
                     {revealedStartCards.includes(index) ? card : '?'}
@@ -604,6 +751,19 @@ function App() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="lobbyDetailsBar">
+            <span>Lobby-Code: <strong>{onlineLobby.code}</strong></span>
+            <span>Spieler: {onlineLobby.players.length}/5</span>
+            {me && <span>Du bist: {me.name}</span>}
+
+            <button
+              className="dangerButton leaveLobbyButton"
+              onClick={leaveLobbyWithConfirmation}
+            >
+              {isConfirmingLeaveLobby ? 'Wirklich verlassen?' : 'Lobby verlassen'}
+            </button>
           </div>
         </section>
       </main>
@@ -629,7 +789,10 @@ function App() {
           <button
             className="primaryButton"
             onClick={() => {
-              socket.emit('create-lobby', onlineName || 'Max')
+              socket.emit('create-lobby', {
+                playerName: onlineName || 'Gast',
+                playerId,
+              })
             }}
           >
             Online-Lobby erstellen
@@ -651,6 +814,7 @@ function App() {
               socket.emit('join-lobby', {
                 code: onlineCode,
                 playerName: onlineName || 'Gast',
+                playerId,
               })
             }}
           >
@@ -677,6 +841,14 @@ function App() {
                 Online-Spiel starten
               </button>
             )}
+
+            <button
+              className="secondaryButton leaveLobbyButton"
+              onClick={leaveLobbyWithConfirmation}
+            >
+              {isConfirmingLeaveLobby ? 'Wirklich verlassen?' : 'Lobby verlassen'}
+            </button>
+
           </div>
         )}
       </section>
