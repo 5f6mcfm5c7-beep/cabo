@@ -522,6 +522,21 @@ io.on('connection', (socket) => {
 
             if (!lobby) return
 
+            const player = lobby.players.find((player) => player.id === socket.id)
+
+            if (!player) return
+
+            if (type === 'memorize') {
+                if (lobby.phase !== 'memorize') return
+                if (player.ready) return
+
+                const ownMemorizeHighlights = lobby.highlightedCards.filter(
+                    (card) => card.playerId === socket.id && card.type === 'memorize'
+                )
+
+                if (ownMemorizeHighlights.length >= 2) return
+            }
+
             const alreadyHighlighted = lobby.highlightedCards.some(
                 (card) =>
                     card.playerId === socket.id &&
@@ -545,10 +560,6 @@ io.on('connection', (socket) => {
                     )
 
                     if (ownMemorizeHighlights.length >= 2) {
-                        const player = lobby.players.find((player) => player.id === socket.id)
-
-                        if (!player) return
-
                         const persistentPlayerId = player.playerId
 
                         setTimeout(() => {
