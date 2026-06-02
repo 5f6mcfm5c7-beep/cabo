@@ -559,6 +559,7 @@ function App() {
                   if (!isMyTurn) return
                   if (me?.drawnCard == null) return
 
+                  console.log("DISCARD CLICK")
                   socket.emit('discard-drawn-card', onlineLobby.code)
                   setMyDrawnCard(null)
                 }}
@@ -730,8 +731,9 @@ function App() {
 
                         return
                       }
-                      
+
                       if (me?.drawnCard != null && isMyTurn) {
+                        console.log("SWAP CLICK")
                         socket.emit('swap-card', {
                           code: onlineLobby.code,
                           cardIndex: index,

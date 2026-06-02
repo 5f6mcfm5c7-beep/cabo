@@ -803,6 +803,14 @@ io.on('connection', (socket) => {
         player.drawnCard = null
         player.drawSource = null
 
+        const isActionCard =
+            discardedCard === 7 ||
+            discardedCard === 8 ||
+            discardedCard === 9 ||
+            discardedCard === 10 ||
+            discardedCard === 11 ||
+            discardedCard === 12
+
         lobby.highlightedCards = [
             {
                 playerId: 'discard-pile',
@@ -811,23 +819,18 @@ io.on('connection', (socket) => {
             },
         ]
 
+        if (isActionCard) {
+            lobby.phase = 'action-choice'
+            io.to(code).emit('lobby-updated', lobby)
+            return
+        }
+
         io.to(code).emit('lobby-updated', lobby)
 
         setTimeout(() => {
             lobby.highlightedCards = []
 
-            if (
-                discardedCard === 7 ||
-                discardedCard === 8 ||
-                discardedCard === 9 ||
-                discardedCard === 10 ||
-                discardedCard === 11 ||
-                discardedCard === 12
-            ) {
-                lobby.phase = 'action-choice'
-            } else {
-                goToNextPlayer(lobby, code)
-            }
+            goToNextPlayer(lobby, code)
 
             io.to(code).emit('lobby-updated', lobby)
         }, 1200)
@@ -953,6 +956,10 @@ io.on('connection', (socket) => {
         if (!isPlayersTurn(lobby, socket.id)) return
 
         if (lobby.phase !== 'action-choice') return
+
+        lobby.highlightedCards = lobby.highlightedCards.filter(
+            (card) => card.type !== 'discard'
+        )
 
         goToNextPlayer(lobby, code)
 
@@ -1099,8 +1106,7 @@ io.on('connection', (socket) => {
 
                 io.to(code).emit('lobby-updated', lobby)
             }, 1200)
-        }
-    )
+        })
 
     socket.on('call-cabo', (code: string) => {
         const lobby = lobbies[code]
@@ -1117,6 +1123,10 @@ io.on('connection', (socket) => {
             (lobby.currentPlayer + 1) % lobby.players.length
 
         lobby.phase = 'turn'
+
+        lobby.highlightedCards = lobby.highlightedCards.filter(
+            (card) => card.type !== 'discard'
+        )
 
         io.to(code).emit('lobby-updated', lobby)
     })
