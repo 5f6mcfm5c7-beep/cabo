@@ -557,7 +557,7 @@ function App() {
                 className={isDiscardPileHighlighted ? 'pile selected' : 'pile'}
                 onClick={() => {
                   if (!isMyTurn) return
-                  if (myDrawnCard === null) return
+                  if (me?.drawnCard == null) return
 
                   socket.emit('discard-drawn-card', onlineLobby.code)
                   setMyDrawnCard(null)
@@ -730,8 +730,8 @@ function App() {
 
                         return
                       }
-
-                      if (myDrawnCard !== null && isMyTurn) {
+                      
+                      if (me?.drawnCard != null && isMyTurn) {
                         socket.emit('swap-card', {
                           code: onlineLobby.code,
                           cardIndex: index,

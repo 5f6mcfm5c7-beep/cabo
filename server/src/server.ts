@@ -795,6 +795,8 @@ io.on('connection', (socket) => {
 
         const discardedCard = player.drawnCard
 
+        console.log('DISCARD DELAY TEST', discardedCard)
+
         lobby.discardPile.push(discardedCard)
         lobby.discardLocked = false
 
@@ -1067,6 +1069,8 @@ io.on('connection', (socket) => {
             if (player.drawnCard === null) return
 
             const oldCard = player.cards[cardIndex]
+
+            console.log('SWAP DELAY TEST', cardIndex)
 
             if (oldCard === undefined) return
 
