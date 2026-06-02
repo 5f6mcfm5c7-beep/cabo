@@ -6,7 +6,7 @@ type OnlineLobby = {
   highlightedCards: {
     playerId: string
     cardIndex: number
-    type: 'memorize' | 'peek-own' | 'peek-opponent' | 'swap'
+    type: 'memorize' | 'peek-own' | 'peek-opponent' | 'swap' | 'discard'
   }[]
   code: string
   hostId: string
@@ -291,9 +291,11 @@ function App() {
     const opponents = onlineLobby.players.filter((player) => player.id !== currentSocketId)
     const isMyTurn =
       onlineLobby.players[onlineLobby.currentPlayer]?.id === currentSocketId
-    const activePlayer = onlineLobby.players[onlineLobby.currentPlayer]
-    const activePlayerHasDrawnCard = activePlayer?.drawnCard !== null
-    const activeDrawnCardIsMine = activePlayer?.id === currentSocketId
+    const playerWithDrawnCard = onlineLobby.players.find(
+      (player) => player.drawnCard !== null
+    )
+    const hasVisibleDrawnCard = playerWithDrawnCard !== undefined
+    const visibleDrawnCardIsMine = playerWithDrawnCard?.id === currentSocketId
     const isHighlighted = (
       playerId: string,
       cardIndex: number
@@ -304,6 +306,18 @@ function App() {
           card.cardIndex === cardIndex
       )
     }
+
+    const highlightedType = (playerId: string, cardIndex: number) => {
+      return onlineLobby.highlightedCards.find(
+        (card) =>
+          card.playerId === playerId &&
+          card.cardIndex === cardIndex
+      )?.type
+    }
+
+    const isDiscardPileHighlighted = onlineLobby.highlightedCards.some(
+      (card) => card.type === 'discard'
+    )
 
     const statusMessage = () => {
 
@@ -511,10 +525,12 @@ function App() {
 
                         }}
                       >
-                        {revealedOpponentCard?.playerId === player.id &&
-                          revealedOpponentCard.cardIndex === index
-                          ? card
-                          : '?'}
+                        {highlightedType(player.id, index) === 'swap'
+                          ? '🔁'
+                          : revealedOpponentCard?.playerId === player.id &&
+                            revealedOpponentCard.cardIndex === index
+                            ? card
+                            : null}
                       </button>
                     ))}
                   </div>
@@ -524,7 +540,7 @@ function App() {
 
             <div className="pileRow">
               <button
-                className="pile"
+                className={isDiscardPileHighlighted ? 'pile selected' : 'pile'}
                 onClick={() => {
                   if (!isMyTurn) return
                   if (onlineLobby.phase !== 'turn') return
@@ -555,31 +571,33 @@ function App() {
 
               <div className="tableControlZone">
                 <div className="tableControlSlot">
-                  {activePlayerHasDrawnCard && activePlayer && (
+                  {hasVisibleDrawnCard && playerWithDrawnCard && (
                     <div className="drawnTableCard">
                       <p>Gezogen</p>
-                      <div className="gameCard drawnBigCard">
-                        {activeDrawnCardIsMine ? activePlayer.drawnCard : null}
+                      <div className="gameCard drawnBigCard selected">
+                        {visibleDrawnCardIsMine ? playerWithDrawnCard.drawnCard : null}
                       </div>
 
-                      <button
-                        className="secondaryButton setTableButton"
-                        onClick={() => {
-                          setIsDeclaringOnlineSet(true)
-                          setSelectedOnlineSetCards([])
-                          setOnlineSetMessage('')
-                        }}
-                      >
-                        Satz gleicher Karten ablegen
-                      </button>
+                      {visibleDrawnCardIsMine && (
+                        <button
+                          className="secondaryButton setTableButton"
+                          onClick={() => {
+                            setIsDeclaringOnlineSet(true)
+                            setSelectedOnlineSetCards([])
+                            setOnlineSetMessage('')
+                          }}
+                        >
+                          Satz gleicher Karten ablegen
+                        </button>
+                      )}
 
-                      {isDeclaringOnlineSet && (
+                      {visibleDrawnCardIsMine && isDeclaringOnlineSet && (
                         <p className="caboBanner setTableHint">
                           Wähle 2–4 gleiche Karten aus deiner Hand.
                         </p>
                       )}
 
-                      {isDeclaringOnlineSet && (
+                      {visibleDrawnCardIsMine && isDeclaringOnlineSet && (
                         <button
                           className="primaryButton setTableButton"
                           disabled={selectedOnlineSetCards.length < 2}
@@ -754,7 +772,11 @@ function App() {
 
                     }}
                   >
-                    {revealedStartCards.includes(index) ? card : '?'}
+                    {highlightedType(currentSocketId, index) === 'swap'
+                      ? '🔁'
+                      : revealedStartCards.includes(index)
+                        ? card
+                        : null}
                   </button>
                 ))}
               </div>

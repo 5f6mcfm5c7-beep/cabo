@@ -17,7 +17,7 @@ type Player = {
 type HighlightedCard = {
     playerId: string
     cardIndex: number
-    type: 'memorize' | 'peek-own' | 'peek-opponent' | 'swap'
+    type: 'memorize' | 'peek-own' | 'peek-opponent' | 'swap' | 'discard'
 }
 
 type Lobby = {
@@ -801,20 +801,34 @@ io.on('connection', (socket) => {
         player.drawnCard = null
         player.drawSource = null
 
-        if (
-            discardedCard === 7 ||
-            discardedCard === 8 ||
-            discardedCard === 9 ||
-            discardedCard === 10 ||
-            discardedCard === 11 ||
-            discardedCard === 12
-        ) {
-            lobby.phase = 'action-choice'
-        } else {
-            goToNextPlayer(lobby, code)
-        }
+        lobby.highlightedCards = [
+            {
+                playerId: 'discard-pile',
+                cardIndex: -1,
+                type: 'discard',
+            },
+        ]
 
         io.to(code).emit('lobby-updated', lobby)
+
+        setTimeout(() => {
+            lobby.highlightedCards = []
+
+            if (
+                discardedCard === 7 ||
+                discardedCard === 8 ||
+                discardedCard === 9 ||
+                discardedCard === 10 ||
+                discardedCard === 11 ||
+                discardedCard === 12
+            ) {
+                lobby.phase = 'action-choice'
+            } else {
+                goToNextPlayer(lobby, code)
+            }
+
+            io.to(code).emit('lobby-updated', lobby)
+        }, 1200)
     })
 
     socket.on(
@@ -1064,9 +1078,23 @@ io.on('connection', (socket) => {
             lobby.discardPile.push(oldCard)
             lobby.discardLocked = false
 
-            goToNextPlayer(lobby, code)
+            lobby.highlightedCards = [
+                {
+                    playerId: player.id,
+                    cardIndex,
+                    type: 'swap',
+                },
+            ]
 
             io.to(code).emit('lobby-updated', lobby)
+
+            setTimeout(() => {
+                lobby.highlightedCards = []
+
+                goToNextPlayer(lobby, code)
+
+                io.to(code).emit('lobby-updated', lobby)
+            }, 1200)
         }
     )
 
