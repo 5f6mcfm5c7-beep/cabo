@@ -540,7 +540,7 @@ function App() {
 
             <div className="pileRow">
               <button
-                className={isDiscardPileHighlighted ? 'pile selected' : 'pile'}
+                className="pile"
                 onClick={() => {
                   if (!isMyTurn) return
                   if (onlineLobby.phase !== 'turn') return
@@ -554,7 +554,7 @@ function App() {
               </button>
 
               <button
-                className="pile"
+                className={isDiscardPileHighlighted ? 'pile selected' : 'pile'}
                 onClick={() => {
                   if (!isMyTurn) return
                   if (myDrawnCard === null) return
