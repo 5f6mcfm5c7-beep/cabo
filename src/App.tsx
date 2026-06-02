@@ -291,6 +291,9 @@ function App() {
     const opponents = onlineLobby.players.filter((player) => player.id !== currentSocketId)
     const isMyTurn =
       onlineLobby.players[onlineLobby.currentPlayer]?.id === currentSocketId
+    const activePlayer = onlineLobby.players[onlineLobby.currentPlayer]
+    const activePlayerHasDrawnCard = activePlayer?.drawnCard !== null
+    const activeDrawnCardIsMine = activePlayer?.id === currentSocketId
     const isHighlighted = (
       playerId: string,
       cardIndex: number
@@ -552,11 +555,11 @@ function App() {
 
               <div className="tableControlZone">
                 <div className="tableControlSlot">
-                  {myDrawnCard !== null && (
+                  {activePlayerHasDrawnCard && activePlayer && (
                     <div className="drawnTableCard">
                       <p>Gezogen</p>
                       <div className="gameCard drawnBigCard">
-                        {myDrawnCard}
+                        {activeDrawnCardIsMine ? activePlayer.drawnCard : null}
                       </div>
 
                       <button
