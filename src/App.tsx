@@ -47,7 +47,6 @@ function App() {
   const [onlineName, setOnlineName] = useState('')
   const [onlineCode, setOnlineCode] = useState('')
   const [revealedStartCards, setRevealedStartCards] = useState<number[]>([])
-  const [myDrawnCard, setMyDrawnCard] = useState<number | null>(null)
   const [revealedOpponentCard, setRevealedOpponentCard] = useState<{
     playerId: string
     cardIndex: number
@@ -154,8 +153,6 @@ function App() {
         saveLastLobby(lobby.code, ownPlayer.name)
       }
 
-      setMyDrawnCard(ownPlayer?.drawnCard ?? null)
-
       syncRevealStateFromLobby(lobby)
     })
 
@@ -169,8 +166,6 @@ function App() {
         saveLastLobby(lobby.code, ownPlayer.name)
       }
 
-      setMyDrawnCard(ownPlayer?.drawnCard ?? null)
-
       syncRevealStateFromLobby(lobby)
 
       if (!ownPlayer || ownPlayer.drawnCard === null) {
@@ -181,17 +176,12 @@ function App() {
 
     socket.on('game-started', (lobby: OnlineLobby) => {
       setOnlineLobby(lobby)
-      setMyDrawnCard(null)
       setRevealedStartCards([])
       setRevealedOpponentCard(null)
       setSelectedSpecialSwapCard(null)
       setSelectedOnlineSetCards([])
       setOnlineSetMessage('')
       setIsDeclaringOnlineSet(false)
-    })
-
-    socket.on('draw-card-result', (card: number) => {
-      setMyDrawnCard(card)
     })
 
     socket.on('lobby-error', (message: string) => {
@@ -202,7 +192,6 @@ function App() {
 
     socket.on('set-error', (message: string) => {
       setOnlineSetMessage(message)
-      setMyDrawnCard(null)
       setIsDeclaringOnlineSet(false)
       setSelectedOnlineSetCards([])
 
@@ -277,7 +266,6 @@ function App() {
     clearLastLobby()
     setOnlineLobby(null)
     setOnlineCode('')
-    setMyDrawnCard(null)
     setRevealedStartCards([])
     setRevealedOpponentCard(null)
     setSelectedSpecialSwapCard(null)
@@ -584,7 +572,6 @@ function App() {
                     if (me.drawSource !== 'deck') return
 
                     socket.emit('discard-drawn-card', onlineLobby.code)
-                    setMyDrawnCard(null)
                     return
                   }
 
@@ -635,7 +622,6 @@ function App() {
 
                             setIsDeclaringOnlineSet(false)
                             setSelectedOnlineSetCards([])
-                            setMyDrawnCard(null)
                           }}
                         >
                           Satz bestätigen
@@ -764,7 +750,6 @@ function App() {
                           cardIndex: index,
                         })
 
-                        setMyDrawnCard(null)
                         return
                       }
 
