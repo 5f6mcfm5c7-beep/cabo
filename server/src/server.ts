@@ -795,8 +795,6 @@ io.on('connection', (socket) => {
 
         const discardedCard = player.drawnCard
 
-        console.log('DISCARD DELAY TEST', discardedCard)
-
         lobby.discardPile.push(discardedCard)
         lobby.discardLocked = false
 
@@ -833,7 +831,7 @@ io.on('connection', (socket) => {
             goToNextPlayer(lobby, code)
 
             io.to(code).emit('lobby-updated', lobby)
-        }, 1200)
+        }, 1500)
     })
 
     socket.on(
@@ -890,6 +888,11 @@ io.on('connection', (socket) => {
                 socket.emit('set-error', 'Kein gültiger Satz. Dein Zug ist beendet.')
 
                 goToNextPlayer(lobby, code)
+
+                lobby.highlightedCards = lobby.highlightedCards.filter(
+                    (card) => card.type !== 'discard'
+                )
+
                 io.to(code).emit('lobby-updated', lobby)
                 return
             }
@@ -943,6 +946,10 @@ io.on('connection', (socket) => {
             if (card === 11 || card === 12) {
                 lobby.phase = 'special-swap'
             }
+
+            lobby.highlightedCards = lobby.highlightedCards.filter(
+                (card) => card.type !== 'discard'
+            )
 
             io.to(code).emit('lobby-updated', lobby)
         }
@@ -1076,8 +1083,6 @@ io.on('connection', (socket) => {
             if (player.drawnCard === null) return
 
             const oldCard = player.cards[cardIndex]
-
-            console.log('SWAP DELAY TEST', cardIndex)
 
             if (oldCard === undefined) return
 

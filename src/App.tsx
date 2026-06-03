@@ -18,10 +18,12 @@ type OnlineLobby = {
     cards: number[]
     ready: boolean
     drawnCard: number | null
+    drawSource: 'deck' | 'discard' | null
     totalScore: number
   }[]
   drawPile: number[]
   discardPile: number[]
+  discardLocked: boolean
   currentPlayer: number
   caboCalledBy: string | null
   turnsAfterCabo: number
@@ -319,6 +321,10 @@ function App() {
       (card) => card.type === 'discard'
     )
 
+    const isResolvingTurn = onlineLobby.highlightedCards.some(
+      (card) => card.type === 'discard' || card.type === 'swap'
+    )
+
     const statusMessage = () => {
 
       const caboCaller = onlineLobby.players.find(
@@ -329,12 +335,18 @@ function App() {
         return `📢 ${caboCaller.name} hat CABO angesagt. Mache deinen letzten Zug.`
       }
 
+      if (isDeclaringOnlineSet) {
+        return '🃏 Wähle 2–4 gleiche Karten aus deiner Hand.'
+      }
+
       if (onlineSetMessage) {
         return onlineSetMessage
       }
 
-      if (myDrawnCard !== null) {
-        return 'Wähle eine deiner Karten zum Tauschen oder wirf die gezogene Karte ab.'
+      if (visibleDrawnCardIsMine && me?.drawnCard != null) {
+        return me.drawSource === 'deck'
+          ? 'Wähle eine deiner Karten zum Tauschen oder wirf die gezogene Karte ab.'
+          : 'Wähle eine deiner Karten zum Tauschen.'
       }
 
       if (onlineLobby.phase === 'memorize') return '🧠 Merke dir deine Karten.'
@@ -449,6 +461,14 @@ function App() {
                   })()}
                 </div>
               )}
+
+              <button
+                className="dangerButton leaveLobbyButton"
+                onClick={leaveLobbyWithConfirmation}
+              >
+                {isConfirmingLeaveLobby ? 'Wirklich verlassen?' : 'Lobby verlassen'}
+              </button>
+
             </div>
           </section>
         </main>
@@ -544,7 +564,8 @@ function App() {
                 onClick={() => {
                   if (!isMyTurn) return
                   if (onlineLobby.phase !== 'turn') return
-                  if (myDrawnCard !== null) return
+                  if (me?.drawnCard != null) return
+                  if (hasVisibleDrawnCard) return
 
                   socket.emit('draw-from-deck', onlineLobby.code)
                 }}
@@ -557,11 +578,21 @@ function App() {
                 className={isDiscardPileHighlighted ? 'pile selected' : 'pile'}
                 onClick={() => {
                   if (!isMyTurn) return
-                  if (me?.drawnCard == null) return
+                  if (isDeclaringOnlineSet) return
 
-                  console.log("DISCARD CLICK")
-                  socket.emit('discard-drawn-card', onlineLobby.code)
-                  setMyDrawnCard(null)
+                  if (me?.drawnCard != null) {
+                    if (me.drawSource !== 'deck') return
+
+                    socket.emit('discard-drawn-card', onlineLobby.code)
+                    setMyDrawnCard(null)
+                    return
+                  }
+
+                  if (onlineLobby.phase !== 'turn') return
+                  if (onlineLobby.discardLocked) return
+                  if (hasVisibleDrawnCard) return
+
+                  socket.emit('draw-from-discard', onlineLobby.code)
                 }}
               >
                 <p>Ablagestapel</p>
@@ -579,7 +610,7 @@ function App() {
                         {visibleDrawnCardIsMine ? playerWithDrawnCard.drawnCard : null}
                       </div>
 
-                      {visibleDrawnCardIsMine && (
+                      {visibleDrawnCardIsMine && me?.drawSource === 'deck' && !isDeclaringOnlineSet && (
                         <button
                           className="secondaryButton setTableButton"
                           onClick={() => {
@@ -592,13 +623,7 @@ function App() {
                         </button>
                       )}
 
-                      {visibleDrawnCardIsMine && isDeclaringOnlineSet && (
-                        <p className="caboBanner setTableHint">
-                          Wähle 2–4 gleiche Karten aus deiner Hand.
-                        </p>
-                      )}
-
-                      {visibleDrawnCardIsMine && isDeclaringOnlineSet && (
+                      {visibleDrawnCardIsMine && me?.drawSource === 'deck' && isDeclaringOnlineSet && (
                         <button
                           className="primaryButton setTableButton"
                           disabled={selectedOnlineSetCards.length < 2}
@@ -619,7 +644,7 @@ function App() {
                     </div>
                   )}
 
-                  {myDrawnCard === null && isMyTurn && onlineLobby.phase === 'action-choice' && (
+                  {isMyTurn && onlineLobby.phase === 'action-choice' && (
                     <div className="tableActionBox">
                       <p>Sonderaktion</p>
 
@@ -649,7 +674,8 @@ function App() {
                     </div>
                   )}
 
-                  {myDrawnCard === null &&
+                  {!hasVisibleDrawnCard &&
+                    !isResolvingTurn &&
                     isMyTurn &&
                     onlineLobby.phase === 'turn' &&
                     onlineLobby.caboCalledBy === null && (
@@ -685,7 +711,7 @@ function App() {
                     }
                     key={index}
                     onClick={() => {
-                      if (isDeclaringOnlineSet && isMyTurn && myDrawnCard !== null) {
+                      if (isDeclaringOnlineSet && isMyTurn && me?.drawnCard != null && me.drawSource === 'deck') {
                         if (selectedOnlineSetCards.includes(index)) {
                           setSelectedOnlineSetCards(
                             selectedOnlineSetCards.filter((cardIndex) => cardIndex !== index)
@@ -733,7 +759,6 @@ function App() {
                       }
 
                       if (me?.drawnCard != null && isMyTurn) {
-                        console.log("SWAP CLICK")
                         socket.emit('swap-card', {
                           code: onlineLobby.code,
                           cardIndex: index,
