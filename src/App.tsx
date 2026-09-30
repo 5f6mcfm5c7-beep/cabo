@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import NeboGame from './games/nebo/NeboGame.tsx'
+import CrosswordGame from './games/crossword/CrosswordGame.tsx'
 
-type Screen = 'home' | 'nebo' | 'hitster'
+type Screen = 'home' | 'nebo' | 'hitster' | 'crossword'
 
 function App() {
   const [screen, setScreen] = useState<Screen>('home')
@@ -10,6 +11,10 @@ function App() {
   if (screen === 'nebo') {
     return <NeboGame onBack={() => setScreen('home')} />
   }
+
+  if (screen === 'crossword') {
+    return <CrosswordGame onBack={() => setScreen('home')} />
+  } 
 
   if (screen === 'hitster') {
     return (
@@ -46,6 +51,15 @@ function App() {
             <span className="gameTileIcon">🃏</span>
             <span className="gameTileTitle">NEBO</span>
             <span className="gameTileMeta">Online-Lobby</span>
+          </button>
+
+          <button
+            className="gameTile"
+            onClick={() => setScreen('crossword')}
+          >
+            <span className="gameTileIcon">🧩</span>
+            <span className="gameTileTitle">Kreuzworträtsel</span>
+            <span className="gameTileMeta">Online-Coop</span>
           </button>
 
           <button
