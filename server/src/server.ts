@@ -3,6 +3,12 @@ import cors from 'cors'
 import { createServer } from 'http'
 import { Server } from 'socket.io'
 import type { NeboLobby } from './games/nebo/types.js'
+import type { Lobby } from './lobby/types'
+import {
+    makeLobbyCode,
+    findPlayerByPlayerId,
+    findPlayerBySocketId,
+} from './lobby/lobbyManager'
 
 const app = express()
 const httpServer = createServer(app)
@@ -15,10 +21,7 @@ const io = new Server(httpServer, {
 })
 
 const lobbies: Record<string, NeboLobby> = {}
-
-function makeLobbyCode() {
-    return Math.random().toString(36).substring(2, 7).toUpperCase()
-}
+const spielekisteLobbies: Record<string, Lobby> = {}
 
 function createDeck() {
     const deck = [
@@ -213,7 +216,7 @@ function reconnectPlayer(lobby: NeboLobby, oldSocketId: string, newSocketId: str
 function finishMemorizeForPlayer(lobby: NeboLobby, code: string, socketId: string) {
     if (lobby.phase !== 'memorize') return
 
-    const player = lobby.players.find((player) => player.id === socketId)
+    const player = findPlayerBySocketId(lobby, socketId)
 
     if (!player) return
 
@@ -264,7 +267,7 @@ function finishPeekOpponent(lobby: NeboLobby, code: string, socketId: string) {
 }
 
 function finishMemorizeForPersistentPlayer(lobby: NeboLobby, code: string, persistentPlayerId: string) {
-    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+    const player = findPlayerByPlayerId(lobby, persistentPlayerId)
 
     if (!player) return
 
@@ -272,7 +275,7 @@ function finishMemorizeForPersistentPlayer(lobby: NeboLobby, code: string, persi
 }
 
 function finishPeekOwnForPersistentPlayer(lobby: NeboLobby, code: string, persistentPlayerId: string) {
-    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+    const player = findPlayerByPlayerId(lobby, persistentPlayerId)
 
     if (!player) return
 
@@ -280,7 +283,7 @@ function finishPeekOwnForPersistentPlayer(lobby: NeboLobby, code: string, persis
 }
 
 function finishPeekOpponentForPersistentPlayer(lobby: NeboLobby, code: string, persistentPlayerId: string) {
-    const player = lobby.players.find((player) => player.playerId === persistentPlayerId)
+    const player = findPlayerByPlayerId(lobby, persistentPlayerId)
 
     if (!player) return
 
@@ -288,11 +291,19 @@ function finishPeekOpponentForPersistentPlayer(lobby: NeboLobby, code: string, p
 }
 
 function leaveLobby(lobby: NeboLobby, code: string, socketId: string) {
-    const leavingPlayerIndex = lobby.players.findIndex(
+    const spielekisteLobby = spielekisteLobbies[code]
+
+    if (!spielekisteLobby) return
+
+    const leavingPlayer = spielekisteLobby.players.find(
         (player) => player.id === socketId
     )
 
-    if (leavingPlayerIndex === -1) return
+    if (!leavingPlayer) return
+
+    spielekisteLobby.players = spielekisteLobby.players.filter(
+        (player) => player.id !== socketId
+    )
 
     lobby.players = lobby.players.filter(
         (player) => player.id !== socketId
@@ -302,20 +313,24 @@ function leaveLobby(lobby: NeboLobby, code: string, socketId: string) {
         (card) => card.playerId !== socketId
     )
 
-    if (lobby.players.length === 0) {
+    if (spielekisteLobby.players.length === 0) {
+        delete spielekisteLobbies[code]
         delete lobbies[code]
         return
     }
 
-    if (lobby.hostId === socketId) {
-        lobby.hostId = lobby.players[0]!.id
+    if (spielekisteLobby.hostId === socketId) {
+        const newHostId = spielekisteLobby.players[0]!.id
+
+        spielekisteLobby.hostId = newHostId
+        lobby.hostId = newHostId
     }
 
     if (lobby.currentPlayer >= lobby.players.length) {
         lobby.currentPlayer = 0
     }
 
-    io.to(code).emit('lobby-updated', lobby)
+    io.to(code).emit('lobby-updated', spielekisteLobby)
 }
 
 io.on('connection', (socket) => {
@@ -337,8 +352,8 @@ io.on('connection', (socket) => {
             const code = makeLobbyCode()
 
             const lobby: NeboLobby = {
-                code, 
-                game: 'nebo',
+                code,
+                activeGame: 'nebo',
                 hostId: socket.id,
                 players: [
                     {
@@ -366,9 +381,21 @@ io.on('connection', (socket) => {
                 phase: 'lobby',
             }
             lobbies[code] = lobby
+
+            spielekisteLobbies[code] = {
+                code,
+                activeGame: 'nebo',
+                hostId: socket.id,
+                players: lobby.players.map(({ id, playerId, name }) => ({
+                    id,
+                    playerId,
+                    name,
+                })),
+            }
+
             socket.join(code)
 
-            socket.emit('lobby-created', lobby)
+            socket.emit('lobby-created', spielekisteLobbies[code])
         })
 
     socket.on(
@@ -389,14 +416,26 @@ io.on('connection', (socket) => {
                 return
             }
 
-            const existingPlayer = lobby.players.find(
-                (player) => player.playerId === playerId
-            )
+            const existingPlayer = findPlayerByPlayerId(lobby, playerId)
 
             if (existingPlayer) {
                 const oldSocketId = existingPlayer.id
 
                 reconnectPlayer(lobby, oldSocketId, socket.id)
+
+                const spielekisteLobby = spielekisteLobbies[code]
+                const spielekistePlayer = spielekisteLobby?.players.find(
+                    (player) => player.playerId === playerId
+                )
+
+                if (spielekistePlayer) {
+                    spielekistePlayer.id = socket.id
+                    spielekistePlayer.name = playerName
+                }
+
+                if (spielekisteLobby?.hostId === oldSocketId) {
+                    spielekisteLobby.hostId = socket.id
+                }
 
                 const reconnectedPlayer = lobby.players.find(
                     (player) => player.playerId === playerId
@@ -428,10 +467,109 @@ io.on('connection', (socket) => {
                 totalScore: 0,
             })
 
+            spielekisteLobbies[code]?.players.push({
+                id: socket.id,
+                playerId,
+                name: playerName,
+            })
+
             socket.join(code)
 
             io.to(code).emit('lobby-updated', lobby)
         })
+
+    socket.on(
+        'select-game',
+        ({
+            code,
+            game,
+        }: {
+            code: string
+            game: 'nebo' | 'crossword'
+        }) => {
+            const spielekisteLobby = spielekisteLobbies[code]
+
+            if (!spielekisteLobby) {
+                socket.emit('lobby-error', 'Lobby nicht gefunden.')
+                return
+            }
+
+            if (spielekisteLobby.hostId !== socket.id) {
+                socket.emit('lobby-error', 'Nur der Host kann ein Spiel starten.')
+                return
+            }
+
+            spielekisteLobby.activeGame = game
+
+            if (game === 'nebo') {
+                const neboLobby = lobbies[code]
+
+                if (!neboLobby) {
+                    socket.emit('lobby-error', 'NEBO-Spiel nicht gefunden.')
+                    return
+                }
+
+                if (neboLobby.players.length < 2) {
+                    socket.emit(
+                        'lobby-error',
+                        'Für NEBO werden mindestens 2 Spieler benötigt.'
+                    )
+                    return
+                }
+
+                const deck = createDeck()
+
+                neboLobby.players = neboLobby.players.map((player, index) => ({
+                    ...player,
+                    cards: deck.slice(index * 4, index * 4 + 4),
+                    ready: false,
+                    drawnCard: null,
+                    drawSource: null,
+                    totalScore: 0,
+                }))
+
+                const usedCards = neboLobby.players.length * 4
+
+                neboLobby.drawPile = deck.slice(usedCards + 1)
+                neboLobby.discardPile = [deck[usedCards]!]
+                neboLobby.discardLocked = false
+                neboLobby.currentPlayer = 0
+                neboLobby.caboCalledBy = null
+                neboLobby.turnsAfterCabo = 0
+                neboLobby.roundScores = []
+                neboLobby.caboPenaltyApplied = false
+                neboLobby.kamikazePlayerId = null
+                neboLobby.phase = 'memorize'
+                neboLobby.highlightedCards = []
+                neboLobby.memorizedPlayerIds = []
+            }
+
+            io.to(code).emit('game-selected', {
+                game,
+                code,
+            })
+        }
+    )
+
+    socket.on('get-spielekiste-lobby', (code: string) => {
+        const lobby = spielekisteLobbies[code]
+
+        if (!lobby) return
+
+        socket.emit('lobby-created', lobby)
+    })
+
+
+    socket.on('get-nebo-lobby', (code: string) => {
+        const lobby = lobbies[code]
+
+        if (!lobby) {
+            socket.emit('lobby-error', 'NEBO-Spiel nicht gefunden.')
+            return
+        }
+
+        socket.emit('game-started', lobby)
+    })
 
     socket.on('start-game', (code: string) => {
         const lobby = lobbies[code]
@@ -1163,17 +1301,61 @@ io.on('connection', (socket) => {
         io.to(code).emit('game-started', lobby)
     })
 
+    socket.on('leave-nebo-game', (code: string) => {
+        const lobby = lobbies[code]
+        const spielekisteLobby = spielekisteLobbies[code]
+
+        if (!lobby || !spielekisteLobby) return
+
+        const isHost = spielekisteLobby.hostId === socket.id
+
+        if (isHost) {
+            spielekisteLobby.activeGame = null
+
+            lobby.phase = 'lobby'
+            lobby.drawPile = []
+            lobby.discardPile = []
+            lobby.discardLocked = false
+            lobby.highlightedCards = []
+            lobby.memorizedPlayerIds = []
+            lobby.currentPlayer = 0
+            lobby.caboCalledBy = null
+            lobby.turnsAfterCabo = 0
+            lobby.roundScores = []
+            lobby.caboPenaltyApplied = false
+            lobby.kamikazePlayerId = null
+
+            lobby.players = lobby.players.map((player) => ({
+                ...player,
+                cards: [],
+                ready: false,
+                drawnCard: null,
+                drawSource: null,
+                totalScore: 0,
+            }))
+
+            io.to(code).emit('game-ended', {
+                game: 'nebo',
+                code,
+            })
+
+            return
+        }
+
+        socket.emit('game-left', {
+            game: 'nebo',
+            code,
+        })
+    })
+
     socket.on('leave-lobby', (code: string) => {
         const lobby = lobbies[code]
 
         if (!lobby) return
 
+        leaveLobby(lobby, code, socket.id)
+
         socket.leave(code)
-
-        if (lobby.phase === 'lobby') {
-            leaveLobby(lobby, code, socket.id)
-        }
-
         socket.emit('lobby-left')
     })
 
