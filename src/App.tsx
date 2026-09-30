@@ -90,9 +90,13 @@ function App() {
   }
 
   if (screen === 'crossword') {
-    return <CrosswordGame onBack={() => setScreen('home')} />
+    return (
+      <CrosswordGame
+        onBack={() => setScreen('lobby')}
+        lobbyCode={activeLobbyCode}
+      />
+    )
   }
-
   if (screen === 'hitster') {
     return (
       <main className="page">

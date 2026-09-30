@@ -6,10 +6,11 @@ export type LobbyPlayer = {
 
 export type GameType = 'nebo' | 'crossword'
 
-export type BaseLobby<TGameState> = {
+export type BaseLobby = {
     code: string
-    game: GameType
+    activeGame: GameType | null
     hostId: string
     players: LobbyPlayer[]
-    gameState: TGameState
 }
+
+export type Lobby = BaseLobby

@@ -39,7 +39,7 @@ export type NeboGameState = {
         | 'game-over'
 }
 
-export type NeboLobby = Omit<BaseLobby<NeboGameState>, 'players' | 'gameState'> &
+export type NeboLobby = Omit<BaseLobby, 'players'> &
     NeboGameState & {
         players: NeboPlayer[]
     }
