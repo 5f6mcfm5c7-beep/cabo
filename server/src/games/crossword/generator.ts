@@ -84,6 +84,58 @@ function shuffle<T>(
 
 type LayoutCell = 'letter' | 'clue'
 
+function isLayoutValid(
+    layout: LayoutCell[][],
+    rows: number,
+    cols: number
+): boolean {
+    const slots = findSlots(
+        layout,
+        rows,
+        cols
+    )
+
+    const coveredLetters =
+        new Set<string>()
+
+    const usedClues =
+        new Set<string>()
+
+    for (const slot of slots) {
+        usedClues.add(
+            `${slot.clueRow},${slot.clueCol}`
+        )
+
+        for (const cell of slot.cells) {
+            coveredLetters.add(
+                `${cell.row},${cell.col}`
+            )
+        }
+    }
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+            const key = `${row},${col}`
+
+            if (
+                layout[row]![col] === 'letter' &&
+                !coveredLetters.has(key)
+            ) {
+                return false
+            }
+
+            if (
+                layout[row]![col] === 'clue' &&
+                !usedClues.has(key)
+            ) {
+                return false
+            }
+        }
+    }
+
+    return true
+}
+
 function generateLayout(
     rows: number,
     cols: number,
@@ -154,40 +206,6 @@ function generateLayout(
             '...#......#....',
             '.#....#...#....',
         ],
-        [
-            '##...#....#....',
-            '#....#....#...#',
-            '..#.........##.',
-            '..#.......#....',
-            '...##.##.......',
-            '##......##.##.#',
-            '#....#.........',
-            '.....#...##.#..',
-            '...#......#....',
-            '....#......#...',
-            '#.......#.#....',
-            '..#..#......#..',
-            '.#.....#..##.#.',
-            '.#....#......#.',
-            '#...##....#....',
-        ],
-        [
-            '#....#.......##',
-            '.#......#...#.#',
-            '..#...#....#...',
-            '..#.........#.#',
-            '...#......#....',
-            '#........#.....',
-            '.#...#...#.#..#',
-            '..#.........##.',
-            '...##.....##...',
-            '#.......#......',
-            '#...#..#..#.#.#',
-            '...#........#..',
-            '......#....#...',
-            '......#.#......',
-            '#...##....##..#',
-        ],
     ]
 
     const templateIndex =
@@ -234,7 +252,275 @@ function generateLayout(
             )
     }
 
+    // Hinweisfelder intelligent verschieben
+    const mutationAttempts = 250
+    const targetMutations = 8
+    let successfulMutations = 0
+
+    const directions: [number, number][] = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1],
+        [-2, 0],
+        [2, 0],
+        [0, -2],
+        [0, 2],
+    ]
+
+    for (
+        let attempt = 0;
+        attempt < mutationAttempts &&
+        successfulMutations < targetMutations;
+        attempt++
+    ) {
+        const clueCells: {
+            row: number
+            col: number
+        }[] = []
+
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                if (
+                    layout[row]![col] === 'clue'
+                ) {
+                    clueCells.push({
+                        row,
+                        col,
+                    })
+                }
+            }
+        }
+
+        const source =
+            clueCells[
+            Math.floor(
+                random() * clueCells.length
+            )
+            ]
+
+        if (!source) {
+            continue
+        }
+
+        const [dr, dc] =
+            directions[
+            Math.floor(
+                random() * directions.length
+            )
+            ]!
+
+        const targetRow =
+            source.row + dr
+
+        const targetCol =
+            source.col + dc
+
+        if (
+            targetRow < 0 ||
+            targetRow >= rows ||
+            targetCol < 0 ||
+            targetCol >= cols
+        ) {
+            continue
+        }
+
+        if (
+            layout[targetRow]![targetCol] !==
+            'letter'
+        ) {
+            continue
+        }
+
+        // Hinweisfeld verschieben
+        layout[source.row]![source.col] =
+            'letter'
+
+        layout[targetRow]![targetCol] =
+            'clue'
+
+        // Keine 3 Hinweisfelder direkt hintereinander
+        let hasClueWall = false
+
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                const horizontal =
+                    col + 2 < cols &&
+                    layout[row]![col] === 'clue' &&
+                    layout[row]![col + 1] === 'clue' &&
+                    layout[row]![col + 2] === 'clue'
+
+                const vertical =
+                    row + 2 < rows &&
+                    layout[row]![col] === 'clue' &&
+                    layout[row + 1]![col] === 'clue' &&
+                    layout[row + 2]![col] === 'clue'
+
+                if (
+                    horizontal ||
+                    vertical
+                ) {
+                    hasClueWall = true
+                    break
+                }
+            }
+
+            if (hasClueWall) {
+                break
+            }
+        }
+
+        if (
+            hasClueWall ||
+            !isLayoutValid(
+                layout,
+                rows,
+                cols
+            )
+        ) {
+            // Ersten Move rückgängig machen
+            layout[source.row]![source.col] =
+                'clue'
+
+            layout[targetRow]![targetCol] =
+                'letter'
+
+            // Falls Einzel-Move scheitert:
+            // zwei Clues gleichzeitig verschieben
+            const secondSource =
+                clueCells[
+                Math.floor(
+                    random() * clueCells.length
+                )
+                ]
+
+            if (
+                !secondSource ||
+                (
+                    secondSource.row === source.row &&
+                    secondSource.col === source.col
+                )
+            ) {
+                continue
+            }
+
+            const [dr2, dc2] =
+                directions[
+                Math.floor(
+                    random() * directions.length
+                )
+                ]!
+
+            const targetRow2 =
+                secondSource.row + dr2
+
+            const targetCol2 =
+                secondSource.col + dc2
+
+            if (
+                targetRow2 < 0 ||
+                targetRow2 >= rows ||
+                targetCol2 < 0 ||
+                targetCol2 >= cols
+            ) {
+                continue
+            }
+
+            if (
+                layout[targetRow]![targetCol] !== 'letter' ||
+                layout[targetRow2]![targetCol2] !== 'letter'
+            ) {
+                continue
+            }
+
+            if (
+                targetRow === targetRow2 &&
+                targetCol === targetCol2
+            ) {
+                continue
+            }
+
+            // Beide Moves gleichzeitig durchführen
+            layout[source.row]![source.col] =
+                'letter'
+
+            layout[secondSource.row]![secondSource.col] =
+                'letter'
+
+            layout[targetRow]![targetCol] =
+                'clue'
+
+            layout[targetRow2]![targetCol2] =
+                'clue'
+
+            let hasDoubleMoveClueWall = false
+
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < cols; col++) {
+                    const horizontal =
+                        col + 2 < cols &&
+                        layout[row]![col] === 'clue' &&
+                        layout[row]![col + 1] === 'clue' &&
+                        layout[row]![col + 2] === 'clue'
+
+                    const vertical =
+                        row + 2 < rows &&
+                        layout[row]![col] === 'clue' &&
+                        layout[row + 1]![col] === 'clue' &&
+                        layout[row + 2]![col] === 'clue'
+
+                    if (horizontal || vertical) {
+                        hasDoubleMoveClueWall = true
+                        break
+                    }
+                }
+
+                if (hasDoubleMoveClueWall) {
+                    break
+                }
+            }
+
+            if (
+                hasDoubleMoveClueWall ||
+                !isLayoutValid(
+                    layout,
+                    rows,
+                    cols
+                )
+            ) {
+                // Beide Moves rückgängig machen
+                layout[source.row]![source.col] =
+                    'clue'
+
+                layout[secondSource.row]![secondSource.col] =
+                    'clue'
+
+                layout[targetRow]![targetCol] =
+                    'letter'
+
+                layout[targetRow2]![targetCol2] =
+                    'letter'
+
+                continue
+            }
+
+            successfulMutations++
+            continue
+        }
+
+        successfulMutations++
+    }
+
+    console.log(
+        `Mutationen: ${successfulMutations}/${targetMutations}`
+    )
+
+    console.log(
+        `Slots: ${findSlots(layout, rows, cols).length}`
+    )
+
     return layout
+
 }
 
 type Slot = {
@@ -328,6 +614,7 @@ function findSlots(
 
     return slots
 }
+
 
 export function generateCrossword(
     bank: CrosswordBankEntry[],
@@ -566,10 +853,76 @@ export function generateCrossword(
                 return true
             }
 
-            bestCandidates = shuffle(
-                bestCandidates,
-                random
-            )
+            bestCandidates = bestCandidates
+                .map(entry => {
+                    const oldLetters =
+                        bestSlot!.cells.map(
+                            cell =>
+                                currentLetters[
+                                cell.row
+                                ]?.[cell.col]
+                        )
+
+                    bestSlot!.cells.forEach(
+                        (cell, index) => {
+                            currentLetters[
+                                cell.row
+                            ]![cell.col] =
+                                entry.word[index]
+                        }
+                    )
+
+                    usedWords.add(entry.word)
+
+                    let score = 0
+                    let impossible = false
+
+                    for (const slot of currentSlots) {
+                        if (
+                            slot === bestSlot ||
+                            currentAssignments.has(slot)
+                        ) {
+                            continue
+                        }
+
+                        const count =
+                            candidatesFor(slot).length
+
+                        if (count === 0) {
+                            impossible = true
+                            break
+                        }
+
+                        score += count
+                    }
+
+                    usedWords.delete(entry.word)
+
+                    bestSlot!.cells.forEach(
+                        (cell, index) => {
+                            currentLetters[
+                                cell.row
+                            ]![cell.col] =
+                                oldLetters[index]
+                        }
+                    )
+
+                    return {
+                        entry,
+                        score:
+                            impossible
+                                ? -1
+                                : score,
+                        tieBreaker: random(),
+                    }
+                })
+                .filter(item => item.score >= 0)
+                .sort(
+                    (a, b) =>
+                        b.score - a.score ||
+                        a.tieBreaker - b.tieBreaker
+                )
+                .map(item => item.entry)
 
             for (
                 const entry of
