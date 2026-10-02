@@ -26,6 +26,16 @@ const lobbies: Record<string, NeboLobby> = {}
 const spielekisteLobbies: Record<string, Lobby> = {}
 const crosswordGames: Record<string, CrosswordGameState> = {}
 
+type CrosswordPresence = {
+    playerId: string
+    name: string
+    row: number
+    col: number
+    direction: 'right' | 'down'
+}
+
+const crosswordPresence: Record<string, CrosswordPresence[]> = {}
+
 function createDeck() {
     const deck = [
         0, 0,
@@ -567,6 +577,8 @@ io.on('connection', (socket) => {
                     entries: {},
                     completed: false,
                 }
+
+                crosswordPresence[code] = []
             }
 
             io.to(code).emit('game-selected', {
@@ -608,7 +620,68 @@ io.on('connection', (socket) => {
             puzzle: testPuzzle,
             game,
         })
+
+        socket.emit(
+            'crossword-presence-updated',
+            crosswordPresence[code] ?? []
+        )
     })
+
+
+    socket.on(
+        'update-crossword-presence',
+        ({
+            code,
+            row,
+            col,
+            direction,
+        }: {
+            code: string
+            row: number
+            col: number
+            direction: 'right' | 'down'
+        }) => {
+            const game = crosswordGames[code]
+            const lobby = spielekisteLobbies[code]
+
+            if (!game || !lobby) return
+
+            const player = lobby.players.find(
+                (player) => player.id === socket.id
+            )
+
+            if (!player) return
+
+            const presence: CrosswordPresence = {
+                playerId: player.playerId,
+                name: player.name,
+                row,
+                col,
+                direction,
+            }
+
+            const currentPresence = crosswordPresence[code] ?? []
+
+            crosswordPresence[code] = [
+                ...currentPresence.filter(
+                    (entry) => entry.playerId !== player.playerId
+                ),
+                presence,
+            ]
+
+            for (const lobbyPlayer of lobby.players) {
+                const otherPlayersPresence = crosswordPresence[code].filter(
+                    (entry) => entry.playerId !== lobbyPlayer.playerId
+                )
+
+                io.to(lobbyPlayer.id).emit(
+                    'crossword-presence-updated',
+                    otherPlayersPresence
+                )
+            }
+
+        }
+    )
 
     socket.on(
         'update-crossword-cell',

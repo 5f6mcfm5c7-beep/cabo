@@ -259,7 +259,7 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
 
         const resetLeaveConfirmationTimeout = window.setTimeout(() => {
             setIsConfirmingLeaveLobby(false)
-        }, 10000)
+        }, 5000)
 
         return () => {
             window.clearTimeout(resetLeaveConfirmationTimeout)
