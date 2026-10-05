@@ -1,0 +1,1708 @@
+{
+  "id": "crossword-012",
+  "level": 12,
+  "difficulty": "easy",
+  "title": "Rätsel 12",
+  "puzzle": {
+    "id": "crossword-012",
+    "title": "Rätsel 12",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Englisches Wort für ‚sie‘ in der Mehrzahl",
+            "answer": "THEY",
+            "direction": "right"
+          },
+          {
+            "clue": "Römische Ziffer für die Zahl sieben",
+            "answer": "VII",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "Y"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "englische Vokabel für das Gegenteil von 'Anfang'",
+            "answer": "END",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Gutdünken",
+            "answer": "ERMESSEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "V"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Ort zum Aufbewahren von Waren oder Zeltplatz im Freien",
+            "answer": "LAGER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 2,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Vergangenheitsform des Verbs 'sitzen'",
+            "answer": "SASS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Musikstil mit verzerrten E-Gitarren, Schlagzeug und viel Härte",
+            "answer": "METAL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "von oben nach unten, in Richtung des Sprechers",
+            "answer": "HERUNTER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Zahl zwischen fünf und sieben",
+            "answer": "SECHS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "akustisches Schallereignis von bestimmter Höhe",
+            "answer": "TON",
+            "direction": "right"
+          },
+          {
+            "clue": "Kurzform für eine kleine Kamera, oft am Computer",
+            "answer": "CAM",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "zu einem noch kommenden Zeitpunkt; nicht jetzt",
+            "answer": "SPÄTER",
+            "direction": "right"
+          },
+          {
+            "clue": "Etwas zum Haltbarmachen in eine Flüssigkeit geben.",
+            "answer": "EINLEGEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Innerlich ruhig und ausgeglichen, nicht aus der Fassung zu bringen",
+            "answer": "GELASSEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "C"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Position innerhalb einer Hierarchie oder Ordnung",
+            "answer": "RANG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Englischer männlicher Vorname",
+            "answer": "DEAN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Gerät zur Gewichtsbestimmung",
+            "answer": "WAAGE",
+            "direction": "right"
+          },
+          {
+            "clue": "Häufiger weiblicher Vorname",
+            "answer": "LISA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Britischer Adelstitel, vergleichbar mit einem Grafen",
+            "answer": "EARL",
+            "direction": "right"
+          },
+          {
+            "clue": "schmales, längliches Brett aus Holz",
+            "answer": "LATTE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Das ist die Mutter _____ Probleme.",
+            "answer": "ALLER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Sportler, der beim Wettkampf rennt",
+            "answer": "LÄUFER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Verschmelzung der Präposition 'an' mit dem Artikel 'das'",
+            "answer": "ANS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "etwas an eine andere Stelle setzen oder neu ordnen",
+            "answer": "UMSTELLEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname; auch ein Apostel im Neuen Testament",
+            "answer": "ANDREAS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "italienische Bezeichnung für die Farbe Blau",
+            "answer": "BLU",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Die Ziffer, die vor der Eins steht und das Nichts darstellt",
+            "answer": "NULL",
+            "direction": "right"
+          },
+          {
+            "clue": "Römische Zahl für acht.",
+            "answer": "VIII",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Abkürzung für einen großen Staat in Nordamerika mit Regierungssitz in Washington",
+            "answer": "USA",
+            "direction": "right"
+          },
+          {
+            "clue": "Aus dem Englischen übernommener Begriff für starke Ablehnung oder Anfeindung im Internet.",
+            "answer": "HATE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Herr _____ arbeitet als Ingenieur in Istanbul.",
+            "answer": "KAN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Verbreiteter deutscher Nachname, u. a. eines ehemaligen Nationaltorwarts",
+            "answer": "LEHMANN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Verheiratete Partnerin eines Mannes",
+            "answer": "EHEFRAU",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, lateinisch für 'Königin'",
+            "answer": "REGINA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "US-amerikanische Stadt, bekannt für Casinos und Spielhallen",
+            "answer": "VEGAS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Hinweisendes Fürwort für etwas Nahes, weiblich oder in der Mehrzahl",
+            "answer": "DIESE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "In geringer Entfernung befindlich",
+            "answer": "NAH",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Person, die jemanden aus einer gefährlichen Lage befreit",
+            "answer": "RETTER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 5,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Das ist alles schon sehr lange _____.",
+            "answer": "HER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Unbestimmter Artikel, männlich oder sächlich",
+            "answer": "EIN",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für ein bedingungsloses Grundeinkommen",
+            "answer": "BGE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Abkürzung für eine bekannte Schweizer Tageszeitung",
+            "answer": "NZZ",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Umgangssprachliches Wort für eine Verneinung",
+            "answer": "NEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Gerade in diesem Augenblick",
+            "answer": "EBEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Küchengerät zum Kochen und Braten von Speisen",
+            "answer": "HERD",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Englischsprachiger weiblicher Vorname, oft als Kurzform verwendet.",
+            "answer": "ANN",
+            "direction": "right"
+          },
+          {
+            "clue": "Französisch für 'nein'",
+            "answer": "NON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Personalpronomen der ersten Person Einzahl im Dativ",
+            "answer": "MIR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Ein häufiger weiblicher Vorname.",
+            "answer": "LEA",
+            "direction": "right"
+          },
+          {
+            "clue": "Englischer Begriff für eine Lebens- oder Zeitspanne, oft in Verbindung mit 'New' bekannt.",
+            "answer": "AGE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Organ, mit dem man hört",
+            "answer": "OHR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Einmaliger Code zur Bestätigung einer Online-Überweisung",
+            "answer": "TAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "Z"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Wort, das angibt, wie oft sich etwas wiederholt",
+            "answer": "MAL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Bestimmte Art oder Klasse einer Ware",
+            "answer": "SORTE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Etwas sichtbar machen oder vorführen",
+            "answer": "ZEIGEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "Z"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Feiner Faden, der auf der Kopfhaut wächst",
+            "answer": "HAAR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Englisches Bindewort, das im Deutschen 'und' bedeutet",
+            "answer": "AND",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Großer, meist runder Schauplatz für Sport oder Konzerte",
+            "answer": "ARENA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Von kreis- oder kugelförmiger Gestalt",
+            "answer": "RUND",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "D"
+      }
+    ]
+  }
+}

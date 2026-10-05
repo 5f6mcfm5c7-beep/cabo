@@ -1,0 +1,1690 @@
+{
+  "id": "crossword-010",
+  "level": 10,
+  "difficulty": "easy",
+  "title": "Rätsel 10",
+  "puzzle": {
+    "id": "crossword-010",
+    "title": "Rätsel 10",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Kurzform für einen Hochschullehrer",
+            "answer": "PROF",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Woge",
+            "answer": "WELL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "körniges Material, das in der Uhr durch das Glas rieselt",
+            "answer": "SAND",
+            "direction": "right"
+          },
+          {
+            "clue": "an diesem Ort",
+            "answer": "HERE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Himmelsrichtung zwischen Süden und Westen.",
+            "answer": "SÜDWEST",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Nicht neu.",
+            "answer": "OLD",
+            "direction": "right"
+          },
+          {
+            "clue": "Weiblicher Vorname slawischen Ursprungs, häufig als Koseform verwendet",
+            "answer": "TANJA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Umgangssprachliche Bezeichnung für einen US-Amerikaner",
+            "answer": "AMI",
+            "direction": "right"
+          },
+          {
+            "clue": "Großstadt an der Westküste der USA, bekannt für Kaffee und Software-Firmen",
+            "answer": "SEATTLE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Elektronische Tanzmusikrichtung mit Ursprung in Chicago",
+            "answer": "HOUSE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Höchste Spielkarte in vielen Kartenspielen",
+            "answer": "ASS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Unterirdischer Sprengkörper, der bei Berührung explodiert.",
+            "answer": "MINE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Aufgebrachte, oft gewaltbereite Menschenmenge",
+            "answer": "MOB",
+            "direction": "right"
+          },
+          {
+            "clue": "Schwimmvogel mit breitem Schnabel, oft auf Teichen anzutreffen",
+            "answer": "ENTE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Englisches Personalpronomen für eine weibliche Einzelperson.",
+            "answer": "SHE",
+            "direction": "right"
+          },
+          {
+            "clue": "Englisches Wort für „Geschichte“, auch Name eines bekannten Dokumentations-Fernsehsenders",
+            "answer": "HISTORY",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 3,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Sammelbegriff für Weizen, Roggen, Gerste und ähnliche Pflanzen",
+            "answer": "GETREIDE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Chemische Verbindung, die einen pH-Wert über 7 aufweist",
+            "answer": "BASE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Das sind die Freunde, mit _____ ich gespielt habe.",
+            "answer": "DENEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Ausruf, den man bei plötzlichem Schmerz von sich gibt.",
+            "answer": "AUA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Englisches Zahlwort für die Zahl 10.",
+            "answer": "TEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Jemandem helfen, eine gute Entscheidung zu treffen",
+            "answer": "BERATEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Bundesstaat der USA mit der Hauptstadt Austin",
+            "answer": "TEXAS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "X"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Handlung",
+            "answer": "THAT",
+            "direction": "right"
+          },
+          {
+            "clue": "Stehendes Binnengewässer",
+            "answer": "SEE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "englisches Possessivpronomen für Dinge ('sein' oder 'ihr')",
+            "answer": "ITS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "sagte etwas offen und drückte damit eine Meinung aus",
+            "answer": "ÄUSSERTE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "ein Stück eines größeren Ganzen",
+            "answer": "TEIL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 4,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Ein kleiner, geflügelter Insekt.",
+            "answer": "MADE",
+            "direction": "right"
+          },
+          {
+            "clue": "Land in Westafrika",
+            "answer": "NIGERIA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Umgangssprachliches Wort für ein Schreibgerät",
+            "answer": "PEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Die genaue Position von etwas bestimmen, etwa per Radar",
+            "answer": "ORTEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Person, die jemanden aus einer gefährlichen Lage befreit",
+            "answer": "RETTER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Stadt am Rhein gegenüber von Düsseldorf",
+            "answer": "NEUSS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Angenehm nach Zucker schmeckend, nicht bitter.",
+            "answer": "SÜSSEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "grüne Pflanze, die Wiesen und Weiden bedeckt",
+            "answer": "GRAS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "umgangssprachlich für geistig verwirrt oder unglaublich",
+            "answer": "IRRE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname russischen und spanischen Ursprungs",
+            "answer": "ELENA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "In einem '_____zimmer' nimmt man gemeinsam die Mahlzeiten ein.",
+            "answer": "ESS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname mit griechischem Ursprung und der Bedeutung 'Gott'",
+            "answer": "THEO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Gerät zum Anzeigen der Zeit",
+            "answer": "UHR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Abkürzung für ein bedingungsloses Grundeinkommen",
+            "answer": "BGE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Etwas, das eine Reaktion oder Anziehung auslöst",
+            "answer": "REIZ",
+            "direction": "right"
+          },
+          {
+            "clue": "Die gesamte Menge, jede einzelne Person oder Sache",
+            "answer": "ALLE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "Z"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "In geringer räumlicher oder zeitlicher Entfernung gelegen.",
+            "answer": "NAHE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Kurzform für eine Zeitspanne von sechzig Sekunden",
+            "answer": "MIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "kleiner, oft nebensächlicher Teil eines Ganzen",
+            "answer": "DETAIL",
+            "direction": "right"
+          },
+          {
+            "clue": "Verzweigung eines Baumstamms",
+            "answer": "AST",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Verschmelzung der Präposition 'an' mit dem Artikel 'das'",
+            "answer": "ANS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Großer privater Fernsehsender in Deutschland",
+            "answer": "RTL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Eine nicht näher bestimmte Sache oder eine kleine Menge.",
+            "answer": "ETWAS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Sich zum Vergnügen oder Zeitvertreib mit etwas beschäftigen",
+            "answer": "SPIELEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Die rechtlich anerkannte Verbindung zweier Menschen als Paar.",
+            "answer": "EHE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Nicht",
+            "answer": "NET",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Ein Hektar besteht aus hundert _____.",
+            "answer": "ARE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Größter Kontinent der Erde",
+            "answer": "ASIEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "N"
+      }
+    ]
+  }
+}

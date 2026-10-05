@@ -1,0 +1,1708 @@
+{
+  "id": "crossword-003",
+  "level": 3,
+  "difficulty": "easy",
+  "title": "Rätsel 3",
+  "puzzle": {
+    "id": "crossword-003",
+    "title": "Rätsel 3",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Hochgeschwindigkeits-Internetstandard",
+            "answer": "LTE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Englisches Possessivpronomen für 'sein'",
+            "answer": "HIS",
+            "direction": "right"
+          },
+          {
+            "clue": "männliches Mitglied einer Königsfamilie",
+            "answer": "PRINZ",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "In der Tonleiter liegt der Ton _____ zwischen C und D.",
+            "answer": "CIS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Deutsche Organisation für technische Hilfe bei Katastrophen",
+            "answer": "THW",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "W"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Englisches Wort für das Sehorgan des Menschen.",
+            "answer": "EYE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Person, die einer anderen bei der Arbeit hilft.",
+            "answer": "ASSISTENT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 1,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "japanische Zeichentrickserie oder -film",
+            "answer": "ANIME",
+            "direction": "right"
+          },
+          {
+            "clue": "englische Abkürzung für den Vorstandsvorsitzenden",
+            "answer": "CEO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Ortungsgerät mittels Funkwellen",
+            "answer": "RADAR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "ostasiatische Halbinsel, seit 1948 in zwei Staaten geteilt",
+            "answer": "KOREA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 2,
+        "solution": "C"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Sicher und beschützt, aus einer Gefahr gerettet",
+            "answer": "GEBORGEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Ort, an dem Verstorbene bestattet werden",
+            "answer": "FRIEDHOF",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Kommunales Gremium, das über städtische Angelegenheiten entscheidet",
+            "answer": "STADTRAT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 3,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Umgangssprachlicher, aus dem Englischen stammender Ausdruck für Geld",
+            "answer": "MONEY",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "US-amerikanischer Geheimdienst für Fernmelde- und Funkaufklärung",
+            "answer": "NSA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Biblischer Anführer, der sein Volk aus Ägypten führte",
+            "answer": "MOSES",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "verbindliche Regel oder Maßstab",
+            "answer": "NORM",
+            "direction": "right"
+          },
+          {
+            "clue": "Besitzanzeigendes Fürwort der ersten Person für weibliche oder mehrere Dinge.",
+            "answer": "MEINE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Halbleiterbauteil, das bei Stromfluss Licht erzeugt",
+            "answer": "LED",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "salopper Ausdruck für Schnitt oder Haarschnitt",
+            "answer": "CUT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Kunstform, die Missstände durch Übertreibung und Spott bloßstellt.",
+            "answer": "SATIRE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "Z"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Internationales Olympisches Komitee (Abkürzung)",
+            "answer": "IOC",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "C"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Flüssigkeit, die aus Obst oder Gemüse gepresst wird.",
+            "answer": "SAFT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Höchste Spielkarte in vielen Kartenspielen",
+            "answer": "ASS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Die offizielle Währung Japans",
+            "answer": "YEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Person, die an einer Schule unterrichtet.",
+            "answer": "LEHRER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Die Frau, _____ Tasche gestohlen wurde, weinte.",
+            "answer": "DEREN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Plattdeutsches Wort für das deutsche Neutralpronomen 'das'",
+            "answer": "DAT",
+            "direction": "right"
+          },
+          {
+            "clue": "Englischer Königsname, mehrfach vergeben",
+            "answer": "EDWARD",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Die Meinungen _____ ich respektiere, sind wichtig.",
+            "answer": "DERER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "englisches Wort für 'Luft'",
+            "answer": "AIR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Vereinbarung über einen Einsatz auf den Ausgang von etwas Ungewissem",
+            "answer": "WETTE",
+            "direction": "right"
+          },
+          {
+            "clue": "Bewegliches Lebewesen, das nicht zu den Pflanzen zählt",
+            "answer": "TIER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Plan zur geschickten Vorgehensweise, um ein Ziel zu erreichen",
+            "answer": "TAKTIK",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "Y"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Unterrichtsfreie Zeit für Schüler",
+            "answer": "FERIEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Abkürzung für ein älteres Dateisystem-Format bei Datenträgern",
+            "answer": "FAT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Umgangssprachlich für: im Inneren von etwas",
+            "answer": "DRIN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Großer Greifvogel und Wappentier vieler Länder",
+            "answer": "ADLER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 5,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "römisches Zahlzeichen für die Drei",
+            "answer": "III",
+            "direction": "right"
+          },
+          {
+            "clue": "Im Tennis: Aufschlag, der die Netzkante berührt und wiederholt wird",
+            "answer": "LET",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Person, die eine Anlage oder Einrichtung pflegt und betreut",
+            "answer": "WART",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 11,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname, auch Name eines Erzengels",
+            "answer": "RAFAEL",
+            "direction": "right"
+          },
+          {
+            "clue": "Lautmalerei, die Lachen ausdrückt",
+            "answer": "HAHA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, der in den 1950er-Jahren sehr beliebt war",
+            "answer": "RENATE",
+            "direction": "right"
+          },
+          {
+            "clue": "an diesem Ort",
+            "answer": "HERE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Englischer weiblicher Vorname, weibliche Form von John",
+            "answer": "JANE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "K"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Umgangssprachlich für den richtigen Trick, um etwas zu bewältigen",
+            "answer": "DREH",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Im hohen Norden heimisches Huftier mit Geweih, auch als Karibu bekannt",
+            "answer": "REN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Abkürzung für die Messung der elektrischen Hirnaktivität",
+            "answer": "EEG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Unbestimmter Artikel, männlich oder sächlich",
+            "answer": "EIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Uferbefestigung zum Anlegen von Schiffen",
+            "answer": "KAI",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Maßeinheit für das Volumen von Flüssigkeiten",
+            "answer": "LITER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Deutsche genossenschaftlich organisierte Supermarktkette",
+            "answer": "EDEKA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Plötzlicher Gedanke oder geistiger Einfall",
+            "answer": "IDEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Deutsche Supermarktkette mit vielen Filialen",
+            "answer": "REWE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "schottische Form des Namens John",
+            "answer": "IAN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Österreichisches Bundesland mit der Hauptstadt Klagenfurt",
+            "answer": "KÄRNTEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Hochbegabter Mensch.",
+            "answer": "GENIE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "E"
+      }
+    ]
+  }
+}

@@ -29,5 +29,6 @@ export type CrosswordPuzzle = {
 export type CrosswordGameState = {
     puzzleId: string
     entries: Record<string, string>
+    revealedCells: string[]
     completed: boolean
 }

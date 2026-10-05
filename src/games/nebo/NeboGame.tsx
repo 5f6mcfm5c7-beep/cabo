@@ -197,6 +197,12 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
             alert(message)
         })
 
+        socket.on('lobby-closed', () => {
+            clearLastLobby()
+            setOnlineLobby(null)
+            onBack()
+        })
+
         socket.on('set-error', (message: string) => {
             setOnlineSetMessage(message)
             setIsDeclaringOnlineSet(false)
@@ -215,8 +221,9 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
             socket.off('game-started')
             socket.off('draw-card-result')
             socket.off('set-error')
+            socket.off('lobby-closed')
         }
-    }, [])
+    }, [onBack])
 
     useEffect(() => {
         if (!lobbyCode) return
@@ -373,14 +380,6 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
             return (
                 <main className="page">
                     <section className="tableCard">
-                        <button
-                            className="secondaryButton leaveLobbyButton" onClick={() => {
-                                if (!lobbyCode) return
-                                socket.emit('leave-nebo-game', lobbyCode)
-                            }}
-                        >
-                            ← Zurück zur Lobby
-                        </button>
                         <p className="eyebrow">Runde beendet</p>
                         <h1>🏆 Rundenergebnis</h1>
 
@@ -470,15 +469,43 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
                                     })()}
                                 </div>
                             )}
+                        </div>
+
+                        <div className="lobbyDetailsBar">
+                            <span>
+                                Lobby-Code: <strong>{onlineLobby.code}</strong>
+                            </span>
+
+                            <span>
+                                Spieler: {onlineLobby.players.length}/5
+                            </span>
+
+                            {me && (
+                                <span>
+                                    Du bist: {me.name}
+                                </span>
+                            )}
 
                             <button
                                 className="dangerButton leaveLobbyButton"
-                                onClick={leaveLobbyWithConfirmation}
-                            >
-                                {isConfirmingLeaveLobby ? 'Wirklich verlassen?' : 'Lobby verlassen'}
-                            </button>
+                                onClick={() => {
+                                    if (!isConfirmingLeaveLobby) {
+                                        setIsConfirmingLeaveLobby(true)
+                                        return
+                                    }
 
+                                    if (!lobbyCode) return
+
+                                    socket.emit('leave-nebo-game', lobbyCode)
+                                    setIsConfirmingLeaveLobby(false)
+                                }}
+                            >
+                                {isConfirmingLeaveLobby
+                                    ? 'Wirklich zurück zur Lobby?'
+                                    : '← Zurück zur Lobby'}
+                            </button>
                         </div>
+
                     </section>
                 </main>
             )

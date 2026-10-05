@@ -1,0 +1,1718 @@
+{
+  "id": "crossword-007",
+  "level": 7,
+  "difficulty": "easy",
+  "title": "Rätsel 7",
+  "puzzle": {
+    "id": "crossword-007",
+    "title": "Rätsel 7",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Regional, vor allem süddeutsch und österreichisch, für einen Winkel oder eine Straßenkante",
+            "answer": "ECK",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Christdemokratische Volkspartei, lange von Helmut Kohl und Angela Merkel geführt",
+            "answer": "CDU",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Treffen zu zweit, oft romantischer Art",
+            "answer": "DATE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "besonders oder eigens für einen Zweck bestimmt",
+            "answer": "SPEZIELL",
+            "direction": "right"
+          },
+          {
+            "clue": "Dreibuchstabiges Kürzel der Gemeinschaftswährung von 20 EU-Staaten",
+            "answer": "EUR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "Z"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Verhältniswort, das Zweck oder Empfänger angibt",
+            "answer": "FÜR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Vorherrschender Zeitgeschmack, besonders bei Kleidung",
+            "answer": "MODE",
+            "direction": "right"
+          },
+          {
+            "clue": "Vorhersage über eine zukünftige Entwicklung.",
+            "answer": "PROGNOSE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Chemische Verbindung, die einen pH-Wert über 7 aufweist",
+            "answer": "BASE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Derb für: mit jemandem Geschlechtsverkehr haben",
+            "answer": "VÖGELN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "Ö"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 2,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Gewaltsame Wegnahme fremden Eigentums",
+            "answer": "RAUB",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname, getragen von Königen Norwegens",
+            "answer": "HARALD",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Englisches Wort für 'Uhr', oft in Verbindung mit 'Smart-'",
+            "answer": "WATCH",
+            "direction": "right"
+          },
+          {
+            "clue": "Umgangssprachlich für ein großes Fahrzeug zum Warentransport",
+            "answer": "LASTER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Die ____ von Atomkraftwerken wird kontrolliert.",
+            "answer": "STRAHLUNG",
+            "direction": "right"
+          },
+          {
+            "clue": "Ohne jeden Inhalt",
+            "answer": "LEER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Nicht hoch, von geringer Höhe",
+            "answer": "NIEDRIG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Aus einer zuvor genannten Sache heraus",
+            "answer": "DARAUS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Figur, die ein Schauspieler im Stück verkörpert",
+            "answer": "ROLLE",
+            "direction": "right"
+          },
+          {
+            "clue": "Bundesstaat der USA mit der Hauptstadt Austin",
+            "answer": "TEXAS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Kleinstes Flächenbundesland Deutschlands mit der Hauptstadt Saarbrücken",
+            "answer": "SAARLAND",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Halbfeste, durchsichtige Substanz, z. B. zum Styling der Haare",
+            "answer": "GEL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Eine Zeile in einem Gedicht oder Lied.",
+            "answer": "VERS",
+            "direction": "right"
+          },
+          {
+            "clue": "umgangssprachlich für 'daran'; an der Reihe sein",
+            "answer": "DRAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Typischer englischer Vorname",
+            "answer": "ERIC",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, Kurzform von Sophia oder Maria.",
+            "answer": "PIA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Eifersucht auf andere",
+            "answer": "NEID",
+            "direction": "right"
+          },
+          {
+            "clue": "Schweres, giftiges Metall mit dem Elementsymbol Pb",
+            "answer": "BLEI",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Ein männlicher Vorname, oft in Skandinavien.",
+            "answer": "OLAF",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Arbeitsraum eines Künstlers oder Fotografen",
+            "answer": "ATELIER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "X"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "zweirädriges Gefährt zum Stehen, oft mit kleinen Rädern",
+            "answer": "ROLLER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "weiblicher Vorname",
+            "answer": "IDA",
+            "direction": "right"
+          },
+          {
+            "clue": "Kürzel für die nordamerikanische Profiliga im Eishockey",
+            "answer": "NHL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 2,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "tiefer gelegenes Gelände zwischen Bergen",
+            "answer": "TAL",
+            "direction": "right"
+          },
+          {
+            "clue": "Gebräuchlicher englischer Kosename für einen deutschen Vornamen",
+            "answer": "FRED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Umgangssprachlich für: im Inneren von etwas",
+            "answer": "DRIN",
+            "direction": "right"
+          },
+          {
+            "clue": "wegen",
+            "answer": "HALBER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, der in den 1950er-Jahren sehr beliebt war",
+            "answer": "RENATE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "In geringer Entfernung befindlich",
+            "answer": "NAH",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Personalpronomen der dritten Person, weiblich oder Mehrzahl",
+            "answer": "SIE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "kurzer, im Englischen verbreiteter Vorname",
+            "answer": "CHRIS",
+            "direction": "right"
+          },
+          {
+            "clue": "Bitte schlag die nächste _____ auf.",
+            "answer": "SEITE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Kurzwort für ökologisch erzeugte Lebensmittel",
+            "answer": "BIO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Zweiter Buchstabe des griechischen Alphabets",
+            "answer": "BETA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Französisch für 'nein'",
+            "answer": "NON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Großer zylindrischer Behälter für Flüssigkeiten",
+            "answer": "FASS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Ein Körperteil, das zum Stehen und Gehen dient.",
+            "answer": "LEG",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Körperteil am Ende des Arms mit fünf Fingern",
+            "answer": "HAND",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Kurzer männlicher Vorname, oft Koseform eines längeren Namens.",
+            "answer": "BEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Männlicher bestimmter Artikel im Wenfall",
+            "answer": "DEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Französisches Wort für einen einzelnen Tanzschritt, etwa im Ballett.",
+            "answer": "PAS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Freundlich und herzlich im Umgang mit anderen",
+            "answer": "LIEB",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Ausruf der Gleichgültigkeit oder leichten Enttäuschung",
+            "answer": "MEH",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Ihre Freundinnen nannten sie kurz _____.",
+            "answer": "MEL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Präposition mit Dativ, die Nähe oder Anwesenheit ausdrückt.",
+            "answer": "BEI",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Kindliche Anrede für die eigene Mutter",
+            "answer": "MAMA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Wort, mit dem eine Person gerufen wird",
+            "answer": "NAME",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Mit dem Fuß gegen etwas stoßen",
+            "answer": "TRETEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Abkürzung für ein Verfahren, das mehreren Geräten die gemeinsame Nutzung einer IP-Adresse ermöglicht.",
+            "answer": "NAT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Folge von zusammengehörenden Fernsehepisoden.",
+            "answer": "SERIE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Person, die mutige oder bewundernswerte Taten vollbringt",
+            "answer": "HELD",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "D"
+      }
+    ]
+  }
+}

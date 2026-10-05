@@ -1,0 +1,1695 @@
+{
+  "id": "crossword-008",
+  "level": 8,
+  "difficulty": "easy",
+  "title": "Rätsel 8",
+  "puzzle": {
+    "id": "crossword-008",
+    "title": "Rätsel 8",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Englisches Wort für eine unterhaltsame Partie am Bildschirm",
+            "answer": "GAME",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Eine kürzere Darstellung eines Geschehens in Wort oder Schrift",
+            "answer": "ERZÄHLUNG",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "Z"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "kokett mit jemandem anbandeln, um dessen Interesse zu wecken",
+            "answer": "FLIRTEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "In der Tonleiter liegt der Ton _____ zwischen C und D.",
+            "answer": "CIS",
+            "direction": "right"
+          },
+          {
+            "clue": "aus der Schweizer Hauptstadt stammend",
+            "answer": "BERNER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 2,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Abkürzung, die 'möglicherweise' oder 'unter Umständen' bedeutet.",
+            "answer": "EVTL",
+            "direction": "right"
+          },
+          {
+            "clue": "Superlativ von 'eher'; am schnellsten oder wahrscheinlichsten",
+            "answer": "EHESTEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Landwirtschaftlich genutzte Fläche",
+            "answer": "FELD",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Etwas in eine Öffnung hineinschieben oder festgeklemmt sein",
+            "answer": "STECKEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Nun aber _____ an die Arbeit!",
+            "answer": "RAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, Kurzform von Sophia oder Maria.",
+            "answer": "PIA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Weibliches Rind, das Milch gibt",
+            "answer": "KUH",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für den zehnten Kalendermonat",
+            "answer": "OKT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 3,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Englisches Wort für „ebenfalls“ oder „auch“.",
+            "answer": "TOO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Römische Göttin des Glücks und des Zufalls",
+            "answer": "FORTUNA",
+            "direction": "right"
+          },
+          {
+            "clue": "Abfertigungsgebäude an einem Flughafen oder Hafen",
+            "answer": "TERMINAL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Ohne Abzüge, nach Abzug von Steuern und Kosten",
+            "answer": "NETTO",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Verringerung von etwas oder Gewinnung von Rohstoffen aus der Erde",
+            "answer": "ABBAU",
+            "direction": "right"
+          },
+          {
+            "clue": "Gerade in diesem Augenblick",
+            "answer": "EBEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "K"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "_____ hat viele Titel gewonnen.",
+            "answer": "GUARDIOLA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "gerade eben",
+            "answer": "SOEBEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Vorname des Musikers Bega, bekannt für einen Mambo-Hit",
+            "answer": "LOU",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Großer Eingang oder das Ziel beim Fußball",
+            "answer": "TOR",
+            "direction": "right"
+          },
+          {
+            "clue": "Spannungsgeladenes Genre in Buch oder Film",
+            "answer": "THRILLER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 6,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Kurzform für 'in das'",
+            "answer": "INS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Über den Weg von; auf dem Umweg über",
+            "answer": "VIA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Abkürzung für ein Verfahren, das mehreren Geräten die gemeinsame Nutzung einer IP-Adresse ermöglicht.",
+            "answer": "NAT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Ein weiblicher Vorname deutschen Ursprungs",
+            "answer": "UTE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Umgangssprachlich für schlecht oder lausig",
+            "answer": "MIES",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Ein mythologisches Wesen, das Flöte spielt.",
+            "answer": "PAN",
+            "direction": "right"
+          },
+          {
+            "clue": "Solo, Schmuggler aus einer bekannten Weltraum-Saga",
+            "answer": "HAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Zustand geistiger Umnachtung; auch Ausruf der Begeisterung",
+            "answer": "WAHNSINN",
+            "direction": "right"
+          },
+          {
+            "clue": "Vogel, der Eier legt und auf dem Bauernhof gehalten wird",
+            "answer": "HUHN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 2,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Lautmalerei, die Lachen ausdrückt",
+            "answer": "HAHA",
+            "direction": "right"
+          },
+          {
+            "clue": "Verweilen, bis etwas oder jemand eintrifft",
+            "answer": "WARTEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Höfliche Anrede für einen erwachsenen Mann",
+            "answer": "HERR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 4,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Abkürzung für den Träger der Erbinformation",
+            "answer": "DNS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Fragewort nach einer Sache oder einem Sachverhalt.",
+            "answer": "WAS",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname, der in Bayern und Österreich verbreitet ist",
+            "answer": "ALOIS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "In großer Menge oder hohem Maße vorhanden.",
+            "answer": "VIEL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Kürzel des deutschen Normungsinstituts",
+            "answer": "DIN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 4,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Erstes deutsches öffentlich-rechtliches Fernsehprogramm",
+            "answer": "ARD",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Nicht fest sitzend oder gebunden",
+            "answer": "LOSE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, der vorwärts wie rückwärts gleich gelesen wird",
+            "answer": "ANNA",
+            "direction": "right"
+          },
+          {
+            "clue": "Besitzanzeigendes Fürwort der 2. Person Mehrzahl",
+            "answer": "EUER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Gebräuchlicher englischer Kosename für einen deutschen Vornamen",
+            "answer": "FRED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "nicht",
+            "answer": "NED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Das ist die Mutter _____ Probleme.",
+            "answer": "ALLER",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für einen erläuternden Zusatz im Text",
+            "answer": "ANM",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "die Zahl zwischen zehn und zwölf",
+            "answer": "ELF",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Im Freien stattfindend, nicht drinnen",
+            "answer": "OUTDOOR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Sehr schlecht oder kläglich, in schlimmem Zustand",
+            "answer": "ELEND",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 3,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Stehendes Binnengewässer",
+            "answer": "SEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Personalpronomen der dritten Person, weiblich oder Mehrzahl",
+            "answer": "SIE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Verdauungsorgan, das Nährstoffe aus der Nahrung aufnimmt",
+            "answer": "DARM",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "weit",
+            "answer": "FERN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Internationales Kürzel für die US-amerikanische Währung.",
+            "answer": "USD",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "D"
+      }
+    ]
+  }
+}

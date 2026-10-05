@@ -1,0 +1,1713 @@
+{
+  "id": "crossword-013",
+  "level": 13,
+  "difficulty": "easy",
+  "title": "Rätsel 13",
+  "puzzle": {
+    "id": "crossword-013",
+    "title": "Rätsel 13",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Englisches Wort für das Sehorgan des Menschen.",
+            "answer": "EYE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Beweglicher Schutz vor dem Gesicht an einem Helm",
+            "answer": "VISIER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 5,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Kurzform für ein Gegenargument, Gegenteil von Pro",
+            "answer": "CON",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "verbreitete Endung einer Internetadresse",
+            "answer": "COM",
+            "direction": "right"
+          },
+          {
+            "clue": "Falschschreibung von 'Gesetz'",
+            "answer": "LAW",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 1,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Flüssige oder dickflüssige Beilage zu Speisen.",
+            "answer": "SOSSE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Arbeitsfreier Tag aus besonderem Anlass",
+            "answer": "FEIERTAG",
+            "direction": "right"
+          },
+          {
+            "clue": "Mit Kraft gegen etwas oder jemanden drücken",
+            "answer": "STOSSEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Gegensatz zum Süden",
+            "answer": "NORDEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Langer Metallstrang, auf dem Züge oder Straßenbahnen fahren",
+            "answer": "SCHIENE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Höchste Spielkarte in vielen Kartenspielen",
+            "answer": "ASS",
+            "direction": "right"
+          },
+          {
+            "clue": "starkes Gefühl tiefer Zuneigung",
+            "answer": "LIEBE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Konjunktion, die eine Alternative anzeigt.",
+            "answer": "ODER",
+            "direction": "right"
+          },
+          {
+            "clue": "Heißgetränk aus aufgegossenen Blättern",
+            "answer": "TEE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Ein männlicher Vorname.",
+            "answer": "JON",
+            "direction": "right"
+          },
+          {
+            "clue": "englisches Wort für eine höfliche Bitte",
+            "answer": "PLEASE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Netflix und Amazon Prime gehören zu den bekanntesten _____-Anbietern.",
+            "answer": "OTT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Übertragungsprotokoll für Seiten im Internet",
+            "answer": "HTTP",
+            "direction": "right"
+          },
+          {
+            "clue": "berühmter Name aus Filmen",
+            "answer": "BRUCE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Unbestimmter Artikel, männlich oder sächlich",
+            "answer": "EIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Letzter Punkt oder Abschluss einer Sache",
+            "answer": "ENDE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 0,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "gerade eben",
+            "answer": "SOEBEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Ohne jeden Inhalt",
+            "answer": "LEER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Temperaturangabe für über 30 Grad Celsius",
+            "answer": "HEISSER",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für die Internationale Raumstation",
+            "answer": "ISS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Darf ich _____ behilflich sein, meine Dame?",
+            "answer": "IHNEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Person, die einem mit Hass und Ablehnung begegnet",
+            "answer": "FEIND",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Fluss, der durch Hamburg fließt",
+            "answer": "ELBE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "weiblicher Vorname",
+            "answer": "IDA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Saum",
+            "answer": "RANDE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Laubbaum mit stark gezähnten Blättern, liefert festes Bauholz",
+            "answer": "EICHE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Vorname",
+            "answer": "SAM",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Der Zeitpunkt, an dem man einen Ort verlässt, um zu reisen",
+            "answer": "ABREISE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Mit einem Flugzeug sicher auf dem Boden aufsetzen",
+            "answer": "LANDEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Abkürzung aus dem Online-Marketing für bezahlte Anzeigen in Suchmaschinen",
+            "answer": "SEA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "abgesehen von",
+            "answer": "AUSSER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Jemanden aus einer Gefahr befreien",
+            "answer": "RETTEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Abkürzung für die Zentralbank der Eurozone mit Sitz in Frankfurt",
+            "answer": "EZB",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für Industrie- und Handelskammer",
+            "answer": "IHK",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "Z"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Kürzel für die nordamerikanische Profiliga im Eishockey",
+            "answer": "NHL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Ein Gegenstand oder eine Angelegenheit",
+            "answer": "SACHE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, oft zusammen mit Adam genannt.",
+            "answer": "EVA",
+            "direction": "right"
+          },
+          {
+            "clue": "Großer, überdachter Raum für Veranstaltungen oder Sport",
+            "answer": "HALLE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Theke oder Lokal, an dem Getränke ausgeschenkt werden",
+            "answer": "BAR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "männlicher Vorname, eine Kurzform von Johannes",
+            "answer": "JENS",
+            "direction": "right"
+          },
+          {
+            "clue": "Höfliche Anrede für einen erwachsenen Mann",
+            "answer": "HERR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Große organisierte Streitmacht eines Landes zu Lande",
+            "answer": "HEER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Tastenbeschriftung auf dem Taschenrechner, direkt neben 'cos' zu finden.",
+            "answer": "SIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Französisches Wort für Straße",
+            "answer": "RUE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Ein häufiger weiblicher Vorname.",
+            "answer": "LEA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Lautmalerei, die Lachen ausdrückt",
+            "answer": "HAHA",
+            "direction": "right"
+          },
+          {
+            "clue": "Kurzform für 'in das'",
+            "answer": "INS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Die offizielle Währung Japans",
+            "answer": "YEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Größere Feier zu einem besonderen Anlass",
+            "answer": "FEST",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "tierischer Dung, der als Dünger aufs Feld kommt",
+            "answer": "MIST",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Im hohen Norden heimisches Huftier mit Geweih, auch als Karibu bekannt",
+            "answer": "REN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Frauengestalt der griechischen Sage, deren Entführung den Trojanischen Krieg auslöste",
+            "answer": "HELENA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Stehendes Binnengewässer",
+            "answer": "SEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Mit einem scharfen Gerät Barthaare entfernen",
+            "answer": "RASIEREN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Unrund und wackelig laufen",
+            "answer": "EIERN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "N"
+      }
+    ]
+  }
+}

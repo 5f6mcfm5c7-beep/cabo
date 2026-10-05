@@ -1,0 +1,1723 @@
+{
+  "id": "crossword-004",
+  "level": 4,
+  "difficulty": "easy",
+  "title": "Rätsel 4",
+  "puzzle": {
+    "id": "crossword-004",
+    "title": "Rätsel 4",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Aus dem Englischen entlehnter Ausruf des Staunens und der Begeisterung",
+            "answer": "WOW",
+            "direction": "right"
+          },
+          {
+            "clue": "Englisches Fragewort für 'wie'",
+            "answer": "HOW",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "W"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Wertvolles Edelmetall mit gelblichem Glanz",
+            "answer": "GOLD",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 5,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Verhältniswort für Herkunft oder Besitz",
+            "answer": "VON",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Dreibuchstabiges Kürzel der Gemeinschaftswährung von 20 EU-Staaten",
+            "answer": "EUR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Musik oder Videos live über das Internet übertragen",
+            "answer": "STREAMEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Abkürzung für die staatliche Eisenbahngesellschaft Österreichs",
+            "answer": "ÖBB",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, der in Italien auch Männern gegeben wird",
+            "answer": "ANDREA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Besitzanzeigendes Fürwort im zweiten Fall, dritte Person",
+            "answer": "IHRES",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "Ö"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Englisches Wort für „der/die/das Folgende“",
+            "answer": "NEXT",
+            "direction": "right"
+          },
+          {
+            "clue": "Gekrümmte Linie oder gewölbte Bauform",
+            "answer": "BOGEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "X"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Göttlicher Beistand oder gutes Geschick, das jemandem zuteilwird",
+            "answer": "SEGEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Abschnitt eines Theaterstücks",
+            "answer": "AKT",
+            "direction": "right"
+          },
+          {
+            "clue": "Verhältniswort, das den Beginn eines andauernden Zeitraums angibt.",
+            "answer": "SEIT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Etwas Unangenehmes geduldig hinnehmen",
+            "answer": "ERTRAGEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Das Buch liegt auf _____ Schreibtisch.",
+            "answer": "DEINEM",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Historischer Staat, der 1991 aufgelöst wurde, Vorgänger Russlands.",
+            "answer": "UDSSR",
+            "direction": "right"
+          },
+          {
+            "clue": "englische Vokabel für das Gegenteil von 'Anfang'",
+            "answer": "END",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Höfliche Anrede für einen erwachsenen Mann",
+            "answer": "HERR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Großer See zwischen Deutschland, Österreich und der Schweiz.",
+            "answer": "BODENSEE",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für ein Mitglied des deutschen Parlaments.",
+            "answer": "MDB",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Sozialistischer deutscher Staat von 1949 bis 1990",
+            "answer": "DDR",
+            "direction": "right"
+          },
+          {
+            "clue": "Abkürzung für eine bekannte Schweizer Tageszeitung",
+            "answer": "NZZ",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Geschöpf",
+            "answer": "WESEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Schweizer Stadt am gleichnamigen See, Sitz vieler internationaler Organisationen",
+            "answer": "GENF",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Klarer Wacholderschnaps, Basis für viele Cocktails wie den Martini.",
+            "answer": "GIN",
+            "direction": "right"
+          },
+          {
+            "clue": "Kurzer skandinavischer Nachname, auch Vorname",
+            "answer": "LIE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "annähernd, nicht ganz genau",
+            "answer": "ETWA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "feierliches Versprechen vor Gericht oder Amt",
+            "answer": "EID",
+            "direction": "right"
+          },
+          {
+            "clue": "Einrichtung, in der Kinder unterrichtet werden",
+            "answer": "SCHULE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Zwischen den beiden Optionen entschied er sich für _____.",
+            "answer": "LETZTEREM",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "Z"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Kurzform für eine Zeitspanne von sechzig Sekunden",
+            "answer": "MIN",
+            "direction": "right"
+          },
+          {
+            "clue": "Französisch für 'nein'",
+            "answer": "NON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Ein häufiger weiblicher Vorname.",
+            "answer": "LEA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "Z"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Wildtier mit langen Ohren, das für seine Schnelligkeit bekannt ist",
+            "answer": "HASE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "gebeugte Form für „die zwei zusammen“",
+            "answer": "BEIDEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "C"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Schwimmvogel mit breitem Schnabel, oft auf Teichen anzutreffen",
+            "answer": "ENTE",
+            "direction": "right"
+          },
+          {
+            "clue": "Englisches Personalpronomen für eine weibliche Einzelperson.",
+            "answer": "SHE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Kurze Textnachricht, die per Mobiltelefon verschickt wird",
+            "answer": "SMS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Jemandem persönlich gehörend oder für ihn charakteristisch.",
+            "answer": "EIGEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Italienischer Dichter, Autor der Göttlichen Komödie",
+            "answer": "DANTE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "gebräuchliche Kurzform für den neunten Monat des Jahres",
+            "answer": "SEP",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Umgangssprachliches Wort für ein Schreibgerät",
+            "answer": "PEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Stern, um den sich die Erde dreht",
+            "answer": "SONNE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 11,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Alter Ego von Batman mit Vornamen Bruce.",
+            "answer": "WAYNE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Feiner Faden, der auf der Kopfhaut wächst",
+            "answer": "HAAR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "kleines Nagetier oder Eingabegerät am Computer",
+            "answer": "MAUS",
+            "direction": "right"
+          },
+          {
+            "clue": "Stehendes Binnengewässer",
+            "answer": "SEE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 9,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Umgangssprachliches Kurzwort für eine Hochschule",
+            "answer": "UNI",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Gesellschaftliche Oberschicht mit Titeln wie Graf oder Herzog",
+            "answer": "ADEL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Höchste Spielkarte in vielen Kartenspielen",
+            "answer": "ASS",
+            "direction": "right"
+          },
+          {
+            "clue": "Wort, das eine Einschränkung oder Begrenzung ausdrückt.",
+            "answer": "NUR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Männliche Spielzeugpuppe, bekannt als Partner von Barbie",
+            "answer": "KEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Unbestimmter Artikel, männlich oder sächlich",
+            "answer": "EIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Das eigene Ich in der Psychologie",
+            "answer": "EGO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Kurzform des weiblichen Vornamens Anna",
+            "answer": "ANNE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "US-Präsident, der 1963 in Dallas erschossen wurde",
+            "answer": "KENNEDY",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Zupfinstrument mit birnenförmigem Korpus, Vorläufer der Gitarre",
+            "answer": "LAUTE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Sich gemeinsam auf etwas verständigen",
+            "answer": "EINIGEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "umgangssprachlich für geistig verwirrt oder unglaublich",
+            "answer": "IRRE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "sich in einem Raum oder an einem Ort befinden",
+            "answer": "INNE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Zuruf der Begeisterung, oft im Fußballstadion zu hören",
+            "answer": "OLE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "E"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1733 @@
+{
+  "id": "crossword-009",
+  "level": 9,
+  "difficulty": "easy",
+  "title": "Rätsel 9",
+  "puzzle": {
+    "id": "crossword-009",
+    "title": "Rätsel 9",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Die Ziffer, die vor der Eins steht und das Nichts darstellt",
+            "answer": "NULL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Bezahlte Beschäftigung oder Arbeitsstelle",
+            "answer": "JOB",
+            "direction": "right"
+          },
+          {
+            "clue": "nicht ganz, aber beinahe vollständig",
+            "answer": "FAST",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Englisches Wort für nicht mehr angesagt",
+            "answer": "OUT",
+            "direction": "right"
+          },
+          {
+            "clue": "Durch Vorschriften oder Ordnung festgelegt",
+            "answer": "GEREGELT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "englischer männlicher Vorname",
+            "answer": "ROY",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "Y"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Dreibuchstabiges Kürzel der Gemeinschaftswährung von 20 EU-Staaten",
+            "answer": "EUR",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname germanischen Ursprungs, bedeutet etwa 'mit dem Speer herrschend'",
+            "answer": "GERALD",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 1,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Vermeidet etwas geschickt oder geht um etwas herum – er/sie/es-Form",
+            "answer": "UMGEHT",
+            "direction": "right"
+          },
+          {
+            "clue": "Hinweisendes Fürwort für etwas Nahes, weiblich oder in der Mehrzahl",
+            "answer": "DIESE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Schriftlicher Nachweis für eine Zahlung oder Aussage",
+            "answer": "BELEG",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 2,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Englisches Wort für Zustimmung",
+            "answer": "YES",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "Y"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname; Mädchen aus dem Wunderland bei Lewis Carroll",
+            "answer": "ALICE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Heftiger, unbeherrschter Ärger",
+            "answer": "WUT",
+            "direction": "right"
+          },
+          {
+            "clue": "Beliebter weiblicher Vorname.",
+            "answer": "LARA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Ergebnis am Ende eines Spiels",
+            "answer": "ENDSTAND",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "abgegrenzte Fläche oder Gelände",
+            "answer": "AREAL",
+            "direction": "right"
+          },
+          {
+            "clue": "Das aktive Mitwirken oder der Gebrauch von Mitteln für eine Aufgabe",
+            "answer": "EINSATZ",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Internetadresse einer Webseite",
+            "answer": "URL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Höfliche Anrede für einen erwachsenen Mann",
+            "answer": "HERR",
+            "direction": "right"
+          },
+          {
+            "clue": "Last oder Beanspruchung, die auf etwas oder jemanden einwirkt",
+            "answer": "BELASTUNG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 0,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Die Genehmigung zu etwas geben",
+            "answer": "ERLAUBEN",
+            "direction": "right"
+          },
+          {
+            "clue": "Deutsche genossenschaftlich organisierte Supermarktkette",
+            "answer": "EDEKA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Der Junge packte _____ Rucksack und ging zur Schule.",
+            "answer": "SEINEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Kurzform, die oft als Vorsilbe für Digitalunternehmen und Software-Firmen verwendet wird",
+            "answer": "TECH",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Erfolg im Wettkampf oder Krieg über einen Gegner",
+            "answer": "SIEG",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "umgangssprachlich für geistig verwirrt oder unglaublich",
+            "answer": "IRRE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Abkürzung für eine digitale Breitband-Internetanschlusstechnik",
+            "answer": "DSL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Letzter Punkt oder Abschluss einer Sache",
+            "answer": "ENDE",
+            "direction": "right"
+          },
+          {
+            "clue": "prägnanter, einprägsamer Werbespruch",
+            "answer": "SLOGAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Ich erhielt einen _____ von meinem Freund.",
+            "answer": "CALL",
+            "direction": "right"
+          },
+          {
+            "clue": "Stadt",
+            "answer": "BER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 7,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Pflanze",
+            "answer": "SED",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Nicht verschieden, sondern identisch mit einer anderen Sache",
+            "answer": "SELBE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Ehemalige Hauptstadt der Region Schlesien",
+            "answer": "BRESLAU",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Vorsilbe mit der Bedeutung ‚gegen'",
+            "answer": "ANTI",
+            "direction": "right"
+          },
+          {
+            "clue": "Mobiles Betriebssystem von Apple",
+            "answer": "IOS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "am Tag vor dem heutigen",
+            "answer": "GESTERN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 0,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Sammlung von Dokumenten zu einem bestimmten Vorgang.",
+            "answer": "AKTE",
+            "direction": "right"
+          },
+          {
+            "clue": "Ein Körperteil, das zum Stehen und Gehen dient.",
+            "answer": "LEG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Bis zu diesem Zeitpunkt, bis jetzt",
+            "answer": "BISLANG",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 10,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Er kommt gerade _____ Einkaufen zurück.",
+            "answer": "VOM",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Farbe, die für Liebe und Leidenschaft steht",
+            "answer": "ROT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Umgangssprachliches Wort für eine Verneinung",
+            "answer": "NEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Frühere Bezeichnung der deutschen Rundfunkgebühren-Institution",
+            "answer": "GEZ",
+            "direction": "right"
+          },
+          {
+            "clue": "Eine bemerkenswerte Leistung oder ein Kunststück",
+            "answer": "FEAT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "Z"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Wie _____ auch dreht und wendet, es bleibt schwierig.",
+            "answer": "MANS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 5,
+        "solution": "V"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Die Geburt _____ Christi wird an Weihnachten gefeiert.",
+            "answer": "JESU",
+            "direction": "right"
+          },
+          {
+            "clue": "Englischer männlicher Vorname",
+            "answer": "DEAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Abkürzung für den Träger der Erbinformation",
+            "answer": "DNS",
+            "direction": "right"
+          },
+          {
+            "clue": "Alkoholisches Getränk aus vergorenem Honig",
+            "answer": "MET",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Art und Weise, in der etwas abläuft; auch eine Betriebsart",
+            "answer": "MODUS",
+            "direction": "right"
+          },
+          {
+            "clue": "Sächlicher bestimmter Artikel im Nominativ",
+            "answer": "DAS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Fluss in Nordwestdeutschland, der in die Nordsee mündet",
+            "answer": "EMS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Zustand großer Bedürftigkeit oder Gefahr",
+            "answer": "NOT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Zusammenschluss von zwei Personen, die gemeinsam auftreten.",
+            "answer": "DUO",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Brettspiel mit schwarzen und weißen Steinen auf 64 Feldern",
+            "answer": "DAME",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Überlieferte, oft ausgeschmückte Geschichte über eine berühmte Person",
+            "answer": "LEGENDE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 10,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Ein geräumiges Auto mit viel Platz für Familie und Gepäck.",
+            "answer": "VAN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "V"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "der erste Mensch nach biblischer Überlieferung",
+            "answer": "ADAM",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Ausflug oder Rundreise mit mehreren Stationen",
+            "answer": "TOUR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 11,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "feste Nahrung zu sich nehmen",
+            "answer": "ESSEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Englisches Wort für 'benutzen' oder 'Verwendung'",
+            "answer": "USE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "akustisches Schallereignis von bestimmter Höhe",
+            "answer": "TON",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "N"
+      }
+    ]
+  }
+}

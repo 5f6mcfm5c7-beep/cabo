@@ -4,7 +4,10 @@ import { createServer } from 'http'
 import { Server } from 'socket.io'
 import type { NeboLobby } from './games/nebo/types.js'
 import type { CrosswordGameState } from './games/crossword/types'
-import { testPuzzle } from './games/crossword/puzzles'
+import {
+    crosswordLevels,
+    getCrosswordPuzzle,
+} from './games/crossword/puzzles'
 import type { Lobby } from './lobby/types'
 import {
     makeLobbyCode,
@@ -336,24 +339,31 @@ function leaveLobby(lobby: NeboLobby, code: string, socketId: string) {
         (card) => card.playerId !== socketId
     )
 
-    if (spielekisteLobby.players.length === 0) {
+    if (spielekisteLobby.hostId === socketId) {
+        io.to(code).emit('lobby-closed')
+
         delete spielekisteLobbies[code]
         delete lobbies[code]
+        delete crosswordGames[code]
+        delete crosswordPresence[code]
+
         return
     }
 
-    if (spielekisteLobby.hostId === socketId) {
-        const newHostId = spielekisteLobby.players[0]!.id
+    if (spielekisteLobby.players.length === 0) {
+        delete spielekisteLobbies[code]
+        delete lobbies[code]
+        delete crosswordGames[code]
+        delete crosswordPresence[code]
 
-        spielekisteLobby.hostId = newHostId
-        lobby.hostId = newHostId
+        return
     }
 
     if (lobby.currentPlayer >= lobby.players.length) {
         lobby.currentPlayer = 0
     }
 
-    io.to(code).emit('lobby-updated', spielekisteLobby)
+    io.to(code).emit('spielekiste-lobby-updated', spielekisteLobby)
 }
 
 io.on('connection', (socket) => {
@@ -377,7 +387,7 @@ io.on('connection', (socket) => {
 
             const lobby: NeboLobby = {
                 code,
-                activeGame: 'nebo',
+                activeGame: null,
                 hostId: socket.id,
                 players: [
                     {
@@ -408,7 +418,7 @@ io.on('connection', (socket) => {
 
             spielekisteLobbies[code] = {
                 code,
-                activeGame: 'nebo',
+                activeGame: null,
                 hostId: socket.id,
                 players: lobby.players.map(({ id, playerId, name }) => ({
                     id,
@@ -475,6 +485,12 @@ io.on('connection', (socket) => {
                 socket.join(code)
                 socket.emit('lobby-created', lobby)
                 io.to(code).emit('lobby-updated', lobby)
+
+                io.to(code).emit(
+                    'spielekiste-lobby-updated',
+                    spielekisteLobbies[code]
+                )
+
                 return
             }
 
@@ -502,7 +518,14 @@ io.on('connection', (socket) => {
 
             socket.join(code)
 
+            socket.emit('lobby-created', spielekisteLobbies[code])
+
             io.to(code).emit('lobby-updated', lobby)
+
+            io.to(code).emit(
+                'spielekiste-lobby-updated',
+                spielekisteLobbies[code]
+            )
         })
 
     socket.on(
@@ -510,9 +533,16 @@ io.on('connection', (socket) => {
         ({
             code,
             game,
+            puzzleId,
+            crosswordSave,
         }: {
             code: string
             game: 'nebo' | 'crossword'
+            puzzleId?: string
+            crosswordSave?: {
+                entries: Record<string, string>
+                revealedCells: string[]
+            }
         }) => {
             const spielekisteLobby = spielekisteLobbies[code]
 
@@ -525,8 +555,6 @@ io.on('connection', (socket) => {
                 socket.emit('lobby-error', 'Nur der Host kann ein Spiel starten.')
                 return
             }
-
-            spielekisteLobby.activeGame = game
 
             if (game === 'nebo') {
                 const neboLobby = lobbies[code]
@@ -572,17 +600,65 @@ io.on('connection', (socket) => {
             }
 
             if (game === 'crossword') {
+                if (!puzzleId) {
+                    socket.emit('lobby-error', 'Kein Kreuzworträtsel ausgewählt.')
+                    return
+                }
+
+                const puzzle = getCrosswordPuzzle(puzzleId)
+
+                if (!puzzle) {
+                    socket.emit('lobby-error', 'Kreuzworträtsel nicht gefunden.')
+                    return
+                }
+
                 crosswordGames[code] = {
-                    puzzleId: testPuzzle.id,
-                    entries: {},
+                    puzzleId: puzzle.id,
+                    entries: crosswordSave?.entries ?? {},
+                    revealedCells: crosswordSave?.revealedCells ?? [],
                     completed: false,
                 }
 
                 crosswordPresence[code] = []
             }
 
+            spielekisteLobby.activeGame = game
+
             io.to(code).emit('game-selected', {
                 game,
+                code,
+            })
+        }
+    )
+
+    socket.on(
+        'rejoin-active-game',
+        ({ code }: { code: string }) => {
+            const spielekisteLobby = spielekisteLobbies[code]
+
+            if (!spielekisteLobby) {
+                socket.emit('lobby-error', 'Lobby nicht gefunden.')
+                return
+            }
+
+            const player = spielekisteLobby.players.find(
+                (player) => player.id === socket.id
+            )
+
+            if (!player) {
+                socket.emit('lobby-error', 'Du bist nicht in dieser Lobby.')
+                return
+            }
+
+            const activeGame = spielekisteLobby.activeGame
+
+            if (!activeGame) {
+                socket.emit('lobby-error', 'Aktuell läuft kein Spiel.')
+                return
+            }
+
+            socket.emit('game-selected', {
+                game: activeGame,
                 code,
             })
         }
@@ -593,7 +669,7 @@ io.on('connection', (socket) => {
 
         if (!lobby) return
 
-        socket.emit('lobby-created', lobby)
+        socket.emit('spielekiste-lobby-updated', lobby)
     })
 
 
@@ -608,6 +684,37 @@ io.on('connection', (socket) => {
         socket.emit('game-started', lobby)
     })
 
+    socket.on('get-crossword-levels', () => {
+        const levels = crosswordLevels.map((level) => ({
+            id: level.id,
+            level: level.level,
+            title: level.title,
+            difficulty: level.difficulty,
+
+            solutions: Object.fromEntries(
+                level.puzzle.cells
+                    .filter((cell) => cell.type === 'letter')
+                    .map((cell) => [
+                        `${cell.row}-${cell.col}`,
+                        cell.solution,
+                    ])
+            ),
+        }))
+
+        socket.emit('crossword-levels', levels)
+    })
+
+    socket.on('get-crossword-puzzle', (puzzleId: string) => {
+        const puzzle = getCrosswordPuzzle(puzzleId)
+
+        if (!puzzle) {
+            socket.emit('lobby-error', 'Kreuzworträtsel nicht gefunden.')
+            return
+        }
+
+        socket.emit('crossword-puzzle', puzzle)
+    })
+
     socket.on('get-crossword-game', (code: string) => {
         const game = crosswordGames[code]
 
@@ -616,8 +723,15 @@ io.on('connection', (socket) => {
             return
         }
 
+        const puzzle = getCrosswordPuzzle(game.puzzleId)
+
+        if (!puzzle) {
+            socket.emit('lobby-error', 'Kreuzworträtsel nicht gefunden.')
+            return
+        }
+
         socket.emit('crossword-updated', {
-            puzzle: testPuzzle,
+            puzzle,
             game,
         })
 
@@ -700,19 +814,68 @@ io.on('connection', (socket) => {
 
             if (!game) return
 
-            const cellExists = testPuzzle.cells.some(
+            const puzzle = getCrosswordPuzzle(game.puzzleId)
+
+            if (!puzzle) return
+
+            const cellExists = puzzle.cells.some(
                 (cell) => cell.row === row && cell.col === col
             )
 
             if (!cellExists) return
 
             const key = `${row}-${col}`
+
+            if (game.revealedCells.includes(key)) return
+
             const letter = value.slice(-1).toUpperCase()
 
             game.entries[key] = letter
 
             io.to(code).emit('crossword-updated', {
-                puzzle: testPuzzle,
+                puzzle,
+                game,
+            })
+        }
+    )
+
+    socket.on(
+        'reveal-crossword-cell',
+        ({
+            code,
+            row,
+            col,
+        }: {
+            code: string
+            row: number
+            col: number
+        }) => {
+            const game = crosswordGames[code]
+
+            if (!game) return
+
+            const puzzle = getCrosswordPuzzle(game.puzzleId)
+
+            if (!puzzle) return
+
+            const cell = puzzle.cells.find(
+                (cell) =>
+                    cell.type === 'letter' &&
+                    cell.row === row &&
+                    cell.col === col
+            )
+
+            if (!cell || cell.type !== 'letter') return
+
+            const key = `${row}-${col}`
+
+            if (game.revealedCells.includes(key)) return
+
+            game.entries[key] = cell.solution
+            game.revealedCells.push(key)
+
+            io.to(code).emit('crossword-updated', {
+                puzzle,
                 game,
             })
         }
@@ -1446,6 +1609,33 @@ io.on('connection', (socket) => {
         lobby.memorizedPlayerIds = []
 
         io.to(code).emit('game-started', lobby)
+    })
+
+    socket.on('leave-crossword-game', (code: string) => {
+        const spielekisteLobby = spielekisteLobbies[code]
+
+        if (!spielekisteLobby) return
+
+        const isHost = spielekisteLobby.hostId === socket.id
+
+        if (isHost) {
+            spielekisteLobby.activeGame = null
+
+            delete crosswordGames[code]
+            delete crosswordPresence[code]
+
+            io.to(code).emit('game-ended', {
+                game: 'crossword',
+                code,
+            })
+
+            return
+        }
+
+        socket.emit('game-left', {
+            game: 'crossword',
+            code,
+        })
     })
 
     socket.on('leave-nebo-game', (code: string) => {

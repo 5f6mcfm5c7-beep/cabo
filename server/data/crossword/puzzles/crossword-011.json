@@ -1,0 +1,1703 @@
+{
+  "id": "crossword-011",
+  "level": 11,
+  "difficulty": "easy",
+  "title": "Rätsel 11",
+  "puzzle": {
+    "id": "crossword-011",
+    "title": "Rätsel 11",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Wichtigster deutscher Aktienindex",
+            "answer": "DAX",
+            "direction": "right"
+          },
+          {
+            "clue": "Vortragsreihe zu Ideen, die es 'wert sind, verbreitet zu werden'.",
+            "answer": "TED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 1,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "X"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "ein Stück eines größeren Ganzen",
+            "answer": "TEIL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Wissenschaft von Erziehung und Bildung",
+            "answer": "PÄDAGOGIK",
+            "direction": "right"
+          },
+          {
+            "clue": "Englisches Zahlwort für die Zahl 10.",
+            "answer": "TEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 6,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 7,
+        "solution": "Ä"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 14,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "jemanden höflich um etwas ersuchen",
+            "answer": "BITTEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 2,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 7,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "dem Gewohnten entsprechend, normal",
+            "answer": "ÜBLICH",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Modern und angesagt, besonders bei jungen Leuten",
+            "answer": "HIP",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Heißgetränk aus aufgegossenen Blättern",
+            "answer": "TEE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Weiblicher bestimmter Artikel im Nominativ",
+            "answer": "DIE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Gruppe von Personen, die gemeinsam eine bestimmte Aufgabe organisiert",
+            "answer": "KOMITEE",
+            "direction": "right"
+          },
+          {
+            "clue": "Umgangssprachlich für den deutschen Schulabschluss nach der gymnasialen Oberstufe",
+            "answer": "ABI",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 8,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "H"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname, der 'die Schöne' bedeutet",
+            "answer": "LINDA",
+            "direction": "right"
+          },
+          {
+            "clue": "Bester Freund von Harry Potter",
+            "answer": "RON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 3,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Eifersucht auf andere",
+            "answer": "NEID",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "auserlesene Gruppe der Besten in einem Bereich",
+            "answer": "ELITE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Maria sucht überall nach _____ Brille.",
+            "answer": "IHRE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Männlicher bestimmter Artikel im Wenfall",
+            "answer": "DEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Kurzer, geschlechtsneutraler Vorname",
+            "answer": "KAY",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "US-amerikanischer Technologiekonzern, bekannt für Computer und Server",
+            "answer": "IBM",
+            "direction": "right"
+          },
+          {
+            "clue": "Schweizer Stadt am Rheinknie, an der Grenze zu Deutschland und Frankreich",
+            "answer": "BASEL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "M"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "in unmittelbarer Nähe oder zugleich geschehend",
+            "answer": "DABEI",
+            "direction": "right"
+          },
+          {
+            "clue": "Besitzanzeigendes Fürwort für einen männlichen Eigentümer im Plural.",
+            "answer": "SEINE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "K"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Mit den Zähnen zupacken",
+            "answer": "BEISSEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 11,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Etwas als Grundlage nehmend, davon abgeleitet",
+            "answer": "AUSGEHEND",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "US-amerikanische Behörde für Raumfahrt und Luftfahrtforschung",
+            "answer": "NASA",
+            "direction": "right"
+          },
+          {
+            "clue": "Inhalt für Erwachsene.",
+            "answer": "PORN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Gestell zum Transport von Verletzten oder Kranken",
+            "answer": "TRAGE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "gebräuchliche Kurzform für den neunten Monat des Jahres",
+            "answer": "SEP",
+            "direction": "right"
+          },
+          {
+            "clue": "Rundes Schmuckstück für den Finger",
+            "answer": "RING",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "englisches Wort für 'Luft'",
+            "answer": "AIR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "zusätzlich, noch mehr von etwas",
+            "answer": "WEITERE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "Y"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Heftige verbale Auseinandersetzung zwischen zwei Parteien",
+            "answer": "STREIT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Ein weiblicher Vorname deutschen Ursprungs",
+            "answer": "UTE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 12,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Sichtbare Verbrennung mit Flammen und Hitze",
+            "answer": "FEUER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 2,
+        "solution": "W"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Unterrichtsfreie Zeit für Schüler",
+            "answer": "FERIEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Englisches Wort für 'benutzen' oder 'Verwendung'",
+            "answer": "USE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 11,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Werbefläche am oberen Rand einer Webseite",
+            "answer": "BANNER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Abkürzung für eine linksextreme deutsche Terrororganisation der 1970er-Jahre",
+            "answer": "RAF",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Mit der Hand nach etwas greifen oder ausreichend sein",
+            "answer": "LANGEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 5,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Er schrieb sich für den Studiengang '_____-Technik' ein.",
+            "answer": "MED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Hochbegabter Mensch.",
+            "answer": "GENIE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 14,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Chemische Verbindung, die einen pH-Wert über 7 aufweist",
+            "answer": "BASE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Kurzform für 'gegebenenfalls'",
+            "answer": "GGF",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 7,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname mit der Bedeutung „Löwe“",
+            "answer": "LEON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "umgangssprachlich für riesig oder großartig",
+            "answer": "MEGA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "U"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Ein geöffnetes Fenster innerhalb eines Internetbrowsers",
+            "answer": "TAB",
+            "direction": "right"
+          },
+          {
+            "clue": "akustisches Schallereignis von bestimmter Höhe",
+            "answer": "TON",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Der Mittelfeldspieler Emre _____ stand beim BVB unter Vertrag.",
+            "answer": "CAN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Vor einer Gefahr schnell davonlaufen",
+            "answer": "FLIEHEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 8,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 12,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "C"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Weibliche Form von 'ein' im Französischen.",
+            "answer": "UNE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Weil, nämlich.",
+            "answer": "DENN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Flüssigkeit in Pflanzen.",
+            "answer": "SAP",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "P"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Englisches Wort für heiß, oft in der Werbung verwendet",
+            "answer": "HOT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 9,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Zu keinem einzigen Zeitpunkt",
+            "answer": "NIE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Räumlich unmittelbar an der Seite von etwas",
+            "answer": "NEBEN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 1,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "begeisterter Anhänger einer Person oder Sache",
+            "answer": "FAN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Konjunktion, die eine Alternative anzeigt.",
+            "answer": "ODER",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "R"
+      }
+    ]
+  }
+}

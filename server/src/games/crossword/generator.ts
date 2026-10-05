@@ -221,7 +221,7 @@ function generateLayout(
     const source =
         templates[templateIndex]!
 
-    let layout: LayoutCell[][] =
+    let originalLayout: LayoutCell[][] =
         source.map(row =>
             [...row].map(
                 cell =>
@@ -230,6 +230,9 @@ function generateLayout(
                         : 'letter'
             )
         )
+
+    let layout: LayoutCell[][] =
+        originalLayout.map(row => [...row])
 
     /*
      * 50 % Wahrscheinlichkeit:
@@ -252,10 +255,16 @@ function generateLayout(
             )
     }
 
+    originalLayout =
+        layout.map(row => [...row])
+
     // Hinweisfelder intelligent verschieben
-    const mutationAttempts = 250
-    const targetMutations = 8
+    const mutationAttempts = 1000
+    const targetChangedCells = 35
     let successfulMutations = 0
+
+    let successful2x2Mutations = 0
+    let successfulClueMoves = 0
 
     const directions: [number, number][] = [
         [-1, 0],
@@ -268,12 +277,171 @@ function generateLayout(
         [0, 2],
     ]
 
+    function containsClueWall(
+        candidate: LayoutCell[][]
+    ): boolean {
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                const horizontal =
+                    col + 2 < cols &&
+                    candidate[row]![col] === 'clue' &&
+                    candidate[row]![col + 1] === 'clue' &&
+                    candidate[row]![col + 2] === 'clue'
+
+                const vertical =
+                    row + 2 < rows &&
+                    candidate[row]![col] === 'clue' &&
+                    candidate[row + 1]![col] === 'clue' &&
+                    candidate[row + 2]![col] === 'clue'
+
+                if (horizontal || vertical) {
+                    return true
+                }
+            }
+        }
+
+        return false
+    }
+
+    function countChangedCells(): number {
+        let changed = 0
+
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                if (
+                    layout[row]![col] !==
+                    originalLayout[row]![col]
+                ) {
+                    changed++
+                }
+            }
+        }
+
+        return changed
+    }
+
     for (
         let attempt = 0;
         attempt < mutationAttempts &&
-        successfulMutations < targetMutations;
+        countChangedCells() < targetChangedCells;
         attempt++
     ) {
+
+        if (random() < 0.35) {
+            const diagonalBlocks: {
+                row: number
+                col: number
+            }[] = []
+
+            for (
+                let row = 0;
+                row < rows - 1;
+                row++
+            ) {
+                for (
+                    let col = 0;
+                    col < cols - 1;
+                    col++
+                ) {
+                    const a =
+                        layout[row]![col]
+
+                    const b =
+                        layout[row]![col + 1]
+
+                    const c =
+                        layout[row + 1]![col]
+
+                    const d =
+                        layout[row + 1]![col + 1]
+
+                    const diagonalA =
+                        a === 'clue' &&
+                        d === 'clue' &&
+                        b === 'letter' &&
+                        c === 'letter'
+
+                    const diagonalB =
+                        a === 'letter' &&
+                        d === 'letter' &&
+                        b === 'clue' &&
+                        c === 'clue'
+
+                    if (
+                        diagonalA ||
+                        diagonalB
+                    ) {
+                        diagonalBlocks.push({
+                            row,
+                            col,
+                        })
+                    }
+                }
+            }
+
+            if (diagonalBlocks.length > 0) {
+                const block =
+                    diagonalBlocks[
+                    Math.floor(
+                        random() *
+                        diagonalBlocks.length
+                    )
+                    ]!
+
+                const row = block.row
+                const col = block.col
+
+                const oldA =
+                    layout[row]![col]
+
+                const oldB =
+                    layout[row]![col + 1]
+
+                const oldC =
+                    layout[row + 1]![col]
+
+                const oldD =
+                    layout[row + 1]![col + 1]
+
+                layout[row]![col] =
+                    oldA === 'clue'
+                        ? 'letter'
+                        : 'clue'
+
+                layout[row]![col + 1] =
+                    oldB === 'clue'
+                        ? 'letter'
+                        : 'clue'
+
+                layout[row + 1]![col] =
+                    oldC === 'clue'
+                        ? 'letter'
+                        : 'clue'
+
+                layout[row + 1]![col + 1] =
+                    oldD === 'clue'
+                        ? 'letter'
+                        : 'clue'
+
+                if (
+                    isLayoutValid(
+                        layout,
+                        rows,
+                        cols
+                    ) &&
+                    !containsClueWall(layout)
+                ) {
+                    successfulMutations++
+                    successful2x2Mutations++
+                    continue
+                }
+                layout[row]![col] = oldA!
+                layout[row]![col + 1] = oldB!
+                layout[row + 1]![col] = oldC!
+                layout[row + 1]![col + 1] = oldD!
+            }
+        }
+
         const clueCells: {
             row: number
             col: number
@@ -505,14 +673,33 @@ function generateLayout(
             }
 
             successfulMutations++
+            successfulClueMoves++
             continue
         }
 
         successfulMutations++
+        successfulClueMoves++
     }
 
     console.log(
-        `Mutationen: ${successfulMutations}/${targetMutations}`
+        `Mutationen: ${successfulMutations} | 2x2: ${successful2x2Mutations} | Clue-Moves: ${successfulClueMoves}`
+    )
+
+    let changedCells = 0
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+            if (
+                layout[row]![col] !==
+                originalLayout[row]![col]
+            ) {
+                changedCells++
+            }
+        }
+    }
+
+    console.log(
+        `Abstand zum Template: ${changedCells}/${rows * cols} Zellen`
     )
 
     console.log(

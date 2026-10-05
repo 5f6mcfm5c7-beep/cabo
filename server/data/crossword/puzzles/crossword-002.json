@@ -1,0 +1,1703 @@
+{
+  "id": "crossword-002",
+  "level": 2,
+  "difficulty": "easy",
+  "title": "Rätsel 2",
+  "puzzle": {
+    "id": "crossword-002",
+    "title": "Rätsel 2",
+    "rows": 15,
+    "cols": 15,
+    "cells": [
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Unsichtbar für den Zuschauer sprach der Erzähler aus dem _____.",
+            "answer": "OFF",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Hinweisendes Fürwort für etwas weiter Entferntes",
+            "answer": "JENE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 2,
+        "solution": "J"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 3,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 4,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Unbestimmter Artikel, männlich oder sächlich",
+            "answer": "EIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "US-amerikanischer Flugzeughersteller",
+            "answer": "BOEING",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 8,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 9,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 10,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 12,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 0,
+        "col": 13,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 0,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Der äußere Eindruck, der entsteht, ohne dass er der Wahrheit entsprechen muss",
+            "answer": "ANSCHEIN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 0,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "ohne zeitliches Ende, immerwährend",
+            "answer": "EWIG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "englisch für Zuhause oder Startseite",
+            "answer": "HOME",
+            "direction": "right"
+          },
+          {
+            "clue": "Zu einem früheren Zeitpunkt",
+            "answer": "VORHER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 3,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 4,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 5,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Das Zubeißen mit den Zähnen, auch das Ergebnis davon",
+            "answer": "BISS",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 1,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "Männlicher Vorname russischer Herkunft, Kurzform von Alexander",
+            "answer": "SASCHA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 9,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 12,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 13,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 1,
+        "col": 14,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 0,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 1,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 2,
+        "solution": "V"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Gehobenes Wort für den menschlichen Körper",
+            "answer": "LEIB",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 4,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 6,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 2,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "mit dem Tastsinn oder dem Gemüt wahrnehmen",
+            "answer": "FÜHLEN",
+            "direction": "right"
+          },
+          {
+            "clue": "mit Kapital ausgestattete Einrichtung zur Förderung eines gemeinnützigen Zwecks",
+            "answer": "STIFTUNG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 9,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 10,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 12,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 2,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 0,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 1,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 2,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "gebräuchlicher männlicher Vorname in Frankreich und Russland",
+            "answer": "DENIS",
+            "direction": "right"
+          },
+          {
+            "clue": "Kleidungsstück, das von der Taille herabhängt und die Beine umhüllt",
+            "answer": "ROCK",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 4,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 7,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Englisches Wort für „vereint“, häufig Teil von Namen britischer Sportvereine",
+            "answer": "UNITED",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 3,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Körperteil zwischen Kopf und Rumpf",
+            "answer": "HALS",
+            "direction": "right"
+          },
+          {
+            "clue": "Weich, sanft, nicht hart",
+            "answer": "MOLL",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 11,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 3,
+        "col": 14,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "umgangssprachlich für geistig verwirrt oder unglaublich",
+            "answer": "IRRE",
+            "direction": "right"
+          },
+          {
+            "clue": "Gruppe mit gemeinsamen Merkmalen; auch die Weise des Verhaltens.",
+            "answer": "ART",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 1,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "spanisches Wort für Küste, häufig Bestandteil von Ortsnamen",
+            "answer": "COSTA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Nicht scharf oder spitz, ohne Schneide.",
+            "answer": "STUMPF",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 9,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 10,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 11,
+        "solution": "P"
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 12,
+        "solution": "F"
+      },
+      {
+        "type": "clue",
+        "row": 4,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "_____ Meinhof war eine bekannte deutsche Journalistin und RAF-Mitglied.",
+            "answer": "ULRIKE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 4,
+        "col": 14,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 0,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 1,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 2,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 3,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Etablissement für Glücksspiele wie Roulette und Poker",
+            "answer": "CASINO",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 5,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 8,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 9,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 10,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 5,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Weibliches Rind, das Milch gibt",
+            "answer": "KUH",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 12,
+        "solution": "K"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 5,
+        "col": 14,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 0,
+        "solution": "R"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Akustisches Phänomen durch reflektierten Schall",
+            "answer": "ECHO",
+            "direction": "right"
+          },
+          {
+            "clue": "Essbare süße Früchte wie Äpfel, Birnen und Bananen",
+            "answer": "OBST",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 3,
+        "solution": "C"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 4,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 5,
+        "solution": "O"
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Großstadt in Nordrhein-Westfalen am Rand des Sauerlands",
+            "answer": "HAGEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 6,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Zweigstelle eines Unternehmens oder einer Bank",
+            "answer": "FILIALE",
+            "direction": "right"
+          },
+          {
+            "clue": "Ein weiblicher Vorname deutschen Ursprungs",
+            "answer": "UTE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 8,
+        "solution": "F"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 9,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 10,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 11,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 13,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 6,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 0,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 1,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 2,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 3,
+        "solution": "K"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Pendelfahrzeug, das regelmäßig zwischen zwei Orten verkehrt",
+            "answer": "SHUTTLE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 5,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 6,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 7,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 8,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 10,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 7,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "ziehende Strömung hinter einem fahrenden Schiff",
+            "answer": "SOG",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 13,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 7,
+        "col": 14,
+        "solution": "I"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 0,
+        "clues": [
+          {
+            "clue": "Großer Staat in Südasien mit der Hauptstadt Neu-Delhi",
+            "answer": "INDIEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 1,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Hochbegabter Mensch.",
+            "answer": "GENIE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Aus Stein oder Metall gefertigtes Standbild",
+            "answer": "STATUE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 4,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 5,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 6,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 8,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 9,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Kurzform des weiblichen Vornamens Anna in einigen Sprachen",
+            "answer": "ANA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 8,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Tastenbeschriftung auf dem Taschenrechner, direkt neben 'cos' zu finden.",
+            "answer": "SIN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 13,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 8,
+        "col": 14,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 1,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 2,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Eine bewusst ausgeführte Handlung",
+            "answer": "TAT",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Eine Liste von Themen oder Aufgaben für ein Treffen.",
+            "answer": "AGENDA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 5,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 6,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 7,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 8,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 9,
+        "solution": "D"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 11,
+        "clues": [
+          {
+            "clue": "Die Gesamtheit der Dinge ohne jede Ausnahme.",
+            "answer": "ALLES",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 12,
+        "solution": "O"
+      },
+      {
+        "type": "letter",
+        "row": 9,
+        "col": 13,
+        "solution": "K"
+      },
+      {
+        "type": "clue",
+        "row": 9,
+        "col": 14,
+        "clues": [
+          {
+            "clue": "Maßeinheit für das Volumen von Flüssigkeiten",
+            "answer": "LITER",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 1,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 4,
+        "clues": [
+          {
+            "clue": "Anstrengung, die man für etwas aufbringt",
+            "answer": "MÜHE",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 5,
+        "clues": [
+          {
+            "clue": "Gerade in diesem Augenblick",
+            "answer": "EBEN",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 6,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 7,
+        "clues": [
+          {
+            "clue": "Strafgesetzbuch",
+            "answer": "STGB",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 8,
+        "solution": "G"
+      },
+      {
+        "type": "clue",
+        "row": 10,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Hornplatte am Ende eines Fingers",
+            "answer": "NAGEL",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 10,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 11,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 12,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 13,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 10,
+        "col": 14,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 0,
+        "solution": "D"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 1,
+        "clues": [
+          {
+            "clue": "Es gab da einen Hund _____ Bello.",
+            "answer": "NAMENS",
+            "direction": "right"
+          },
+          {
+            "clue": "Englisches Wort für 'Weg', oft in zusammengesetzten Begriffen",
+            "answer": "WAY",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 2,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 3,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 4,
+        "solution": "M"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 6,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 7,
+        "solution": "S"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 8,
+        "clues": [
+          {
+            "clue": "tiefer gelegenes Gelände zwischen Bergen",
+            "answer": "TAL",
+            "direction": "right"
+          },
+          {
+            "clue": "ein weibliches Schwein",
+            "answer": "SAU",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 10,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 12,
+        "clues": [
+          {
+            "clue": "Verzweigung eines Baumstamms",
+            "answer": "AST",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "row": 11,
+        "col": 13,
+        "clues": [
+          {
+            "clue": "Abkürzung für einen großen Staat in Nordamerika mit Regierungssitz in Washington",
+            "answer": "USA",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 11,
+        "col": 14,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 0,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 1,
+        "solution": "W"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 2,
+        "solution": "I"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 3,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 4,
+        "solution": "Ü"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 5,
+        "solution": "B"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Abkürzung für einen deutschen Turn- und Sportverein",
+            "answer": "TSV",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 7,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 8,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 9,
+        "solution": "V"
+      },
+      {
+        "type": "clue",
+        "row": 12,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Mit viel Schall, das Gegenteil von leise",
+            "answer": "LAUT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 11,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 12,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 13,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 12,
+        "col": 14,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 0,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 1,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 2,
+        "solution": "E"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 3,
+        "clues": [
+          {
+            "clue": "Weiblicher Vorname skandinavischer Herkunft, abgeleitet von 'die Heilige'.",
+            "answer": "HELGA",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 4,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 5,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 6,
+        "solution": "L"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 7,
+        "solution": "G"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 8,
+        "solution": "A"
+      },
+      {
+        "type": "clue",
+        "row": 13,
+        "col": 9,
+        "clues": [
+          {
+            "clue": "Einwohner eines deutschen Bundeslandes rund um Frankfurt",
+            "answer": "HESSE",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 10,
+        "solution": "H"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 11,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 12,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 13,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 13,
+        "col": 14,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 0,
+        "solution": "N"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 1,
+        "solution": "Y"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 2,
+        "clues": [
+          {
+            "clue": "Im hohen Norden heimisches Huftier mit Geweih, auch als Karibu bekannt",
+            "answer": "REN",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 3,
+        "solution": "R"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 4,
+        "solution": "E"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 5,
+        "solution": "N"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 6,
+        "clues": [
+          {
+            "clue": "Englisches Wort für 'aber', oft in der Jugendsprache verwendet",
+            "answer": "BUT",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 7,
+        "solution": "B"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 8,
+        "solution": "U"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 9,
+        "solution": "T"
+      },
+      {
+        "type": "clue",
+        "row": 14,
+        "col": 10,
+        "clues": [
+          {
+            "clue": "Berühmte Persönlichkeit aus Film oder Musik",
+            "answer": "STAR",
+            "direction": "right"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 11,
+        "solution": "S"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 12,
+        "solution": "T"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 13,
+        "solution": "A"
+      },
+      {
+        "type": "letter",
+        "row": 14,
+        "col": 14,
+        "solution": "R"
+      }
+    ]
+  }
+}

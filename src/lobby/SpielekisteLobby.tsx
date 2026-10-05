@@ -3,7 +3,7 @@ import { socket } from '../socket'
 
 type SpielekisteLobbyProps = {
     onBack: () => void
-    onChooseGame: (lobbyCode: string) => void
+    onChooseGame: (lobbyCode: string, isHost: boolean) => void
     initialLobbyCode?: string | null
 }
 
@@ -31,10 +31,45 @@ function SpielekisteLobby({
     const [error, setError] = useState('')
     const [isConfirmingLeave, setIsConfirmingLeave] = useState(false)
 
+    const getPlayerId = () => {
+        const existingPlayerId = localStorage.getItem('spielekiste-player-id')
+
+        if (existingPlayerId) {
+            return existingPlayerId
+        }
+
+        const newPlayerId = `${Date.now()}-${Math.random().toString(36).slice(2)}`
+
+        localStorage.setItem('spielekiste-player-id', newPlayerId)
+
+        return newPlayerId
+    }
+
     useEffect(() => {
 
         const handleLobbyCreated = (newLobby: Lobby) => {
             console.log('LOBBY RECEIVED:', newLobby)
+
+            const me = newLobby.players.find(
+                (player) => player.id === socket.id
+            )
+
+            if (me) {
+                localStorage.setItem(
+                    'spielekiste-player-name',
+                    me.name
+                )
+            }
+
+            localStorage.setItem(
+                'spielekiste-last-lobby-code',
+                newLobby.code
+            )
+            localStorage.setItem(
+                'spielekiste-online-location',
+                'lobby'
+            )
+
             setLobby(newLobby)
             setError('')
         }
@@ -56,15 +91,25 @@ function SpielekisteLobby({
             setError(message)
         }
 
+        const handleLobbyClosed = () => {
+            localStorage.removeItem('spielekiste-last-lobby-code')
+            localStorage.removeItem('spielekiste-online-location')
 
-        socket.on('lobby-updated', handleLobbyUpdated)
+            setLobby(null)
+            setLobbyCode('')
+            setIsConfirmingLeave(false)
+            onBack()
+        }
+
+        socket.on('spielekiste-lobby-updated', handleLobbyUpdated)
         socket.on('lobby-error', handleLobbyError)
+        socket.on('lobby-closed', handleLobbyClosed)
 
         return () => {
             socket.off('lobby-created', handleLobbyCreated)
-            socket.off('lobby-updated', handleLobbyUpdated)
+            socket.off('spielekiste-lobby-updated', handleLobbyUpdated)
             socket.off('lobby-error', handleLobbyError)
-
+            socket.off('lobby-closed', handleLobbyClosed)
         }
     }, [initialLobbyCode])
 
@@ -81,6 +126,9 @@ function SpielekisteLobby({
 
                 return
             }
+
+            localStorage.removeItem('spielekiste-last-lobby-code')
+            localStorage.removeItem('spielekiste-online-location')
 
             socket.emit('leave-lobby', lobby.code)
             setLobby(null)
@@ -122,8 +170,26 @@ function SpielekisteLobby({
                     </div>
 
                     <div>
-                        {isHost ? (
-                            <button onClick={() => onChooseGame(lobby.code)}>
+                        {lobby.activeGame ? (
+                            <>
+                                <p>
+                                    {lobby.activeGame === 'crossword'
+                                        ? '🧩 Kreuzworträtsel läuft gerade.'
+                                        : '🃏 NEBO läuft gerade.'}
+                                </p>
+
+                                <button
+                                    onClick={() => {
+                                        socket.emit('rejoin-active-game', {
+                                            code: lobby.code,
+                                        })
+                                    }}
+                                >
+                                    🎮 Spiel wieder beitreten
+                                </button>
+                            </>
+                        ) : isHost ? (
+                            <button onClick={() => onChooseGame(lobby.code, isHost)}>
                                 🎮 Spiel aussuchen
                             </button>
                         ) : (
@@ -166,9 +232,11 @@ function SpielekisteLobby({
 
                 <button
                     onClick={() => {
+                        localStorage.setItem('spielekiste-player-name', playerName)
+
                         socket.emit('create-lobby', {
                             playerName,
-                            playerId: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
+                            playerId: getPlayerId(),
                         })
                     }}
                 >
@@ -177,10 +245,12 @@ function SpielekisteLobby({
 
                 <button
                     onClick={() => {
+                        localStorage.setItem('spielekiste-player-name', playerName)
+
                         socket.emit('join-lobby', {
                             code: lobbyCode,
                             playerName,
-                            playerId: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
+                            playerId: getPlayerId(),
                         })
                     }}
                 >
