@@ -49,8 +49,7 @@ type OnlineLobby = {
 
 function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
     const [onlineLobby, setOnlineLobby] = useState<OnlineLobby | null>(null)
-    const [onlineName, setOnlineName] = useState('')
-    const [onlineCode, setOnlineCode] = useState('')
+    const [, setOnlineName] = useState('')
     const [revealedStartCards, setRevealedStartCards] = useState<number[]>([])
     const [revealedOpponentCard, setRevealedOpponentCard] = useState<{
         playerId: string
@@ -272,28 +271,6 @@ function NeboGame({ onBack, lobbyCode }: NeboGameProps) {
             window.clearTimeout(resetLeaveConfirmationTimeout)
         }
     }, [isConfirmingLeaveLobby])
-
-    function leaveLobbyWithConfirmation() {
-        if (!isConfirmingLeaveLobby) {
-            setIsConfirmingLeaveLobby(true)
-            return
-        }
-
-        if (onlineLobby) {
-            socket.emit('leave-lobby', onlineLobby.code)
-        }
-
-        clearLastLobby()
-        setOnlineLobby(null)
-        setOnlineCode('')
-        setRevealedStartCards([])
-        setRevealedOpponentCard(null)
-        setSelectedSpecialSwapCard(null)
-        setSelectedOnlineSetCards([])
-        setOnlineSetMessage('')
-        setIsDeclaringOnlineSet(false)
-        setIsConfirmingLeaveLobby(false)
-    }
 
     if (onlineLobby && onlineLobby.phase !== 'lobby') {
         const currentSocketId = socket.id ?? ''
